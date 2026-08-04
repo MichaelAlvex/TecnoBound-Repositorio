@@ -1,0 +1,13 @@
+nome = "";
+sprite = sprite_index;
+quantidade = "1";
+descricao = "";
+direction = random(360);
+speed = random_range(0.25, 0.5);
+friction = 0.1;
+z = 0;
+z_speed = -6
+gravidade = 0.5;
+timer_flutuacao = random(360);
+velocidade_flutuacao = 0.05;
+amplitude_flutuacao = 0.9;
