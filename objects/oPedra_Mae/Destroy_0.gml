@@ -1,6 +1,6 @@
 instance_create_layer(x, y, "Instances", objeto_drop);
 
-var _chance_escada = 100;
+var _chance_escada = 10;
 var _total_pedras = instance_number(oPedra_Mae);
 
 if (_total_pedras <= 1){

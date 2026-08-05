@@ -10,8 +10,8 @@
   "name":"oMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos_Abstratos",
+    "path":"folders/Objetos/Objetos_Abstratos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
