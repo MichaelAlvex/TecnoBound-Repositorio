@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[
+    {"name":"personagem","order":2,"path":"folders/personagem.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"direita","order":2,"path":"sprites/direita/direita.yy",},
+    {"name":"esquerda","order":1,"path":"sprites/esquerda/esquerda.yy",},
+  ],
+}
