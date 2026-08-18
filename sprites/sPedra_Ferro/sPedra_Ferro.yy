@@ -23,7 +23,7 @@
   ],
   "name":"sPedra_Ferro",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"Pedras",
     "path":"folders/Sprites/Pedras.yy",
@@ -50,7 +50,7 @@
     "eventStubScript":null,
     "eventToFunction":{},
     "length":1.0,
-    "lockOrigin":false,
+    "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
       "Keyframes":[],
@@ -75,8 +75,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":8,
+    "yorigin":8,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

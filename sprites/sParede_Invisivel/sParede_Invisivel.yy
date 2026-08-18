@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"sParede_Invisivel",
-  "bboxMode":0,
-  "bbox_bottom":0,
+  "bboxMode":2,
+  "bbox_bottom":31,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":31,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,

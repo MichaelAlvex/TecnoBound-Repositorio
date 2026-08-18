@@ -55,3 +55,4 @@ if (place_meeting (x, y + VelV, oParede_Invisivel)){
 	VelV = 0;
 }
 y += VelV;
+

@@ -1,3 +1,5 @@
+randomize();
+
 Velocidade = 1.5;
 VelH = 0;
 VelV = 0;
