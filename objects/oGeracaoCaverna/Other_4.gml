@@ -17,7 +17,7 @@ for (var _x = 0; _x < _Largura_Grade; _x++){
 	}
 }
 
-var _Refinamentos = 5;
+var _Refinamentos = 6;
 var _Grade_Temp = ds_grid_create(_Largura_Grade, _Altura_Grade);
 
 repeat (_Refinamentos){
@@ -48,6 +48,19 @@ repeat (_Refinamentos){
 }
 
 ds_grid_destroy(_Grade_Temp);
+
+var _Centro_X = _Largura_Grade div 2;
+var _Centro_Y = _Altura_Grade div 2;
+var _Raio_Seguro = 2;
+
+for (var _cx = -_Raio_Seguro; _cx <= _Raio_Seguro; _cx++){
+	for (var _cy = -_Raio_Seguro; _cy <= _Raio_Seguro; _cy++){
+		if ((_Centro_X + _cx > 0) && (_Centro_X + _cx < _Largura_Grade - 1) &&
+			(_Centro_Y + _cy > 0) && (_Centro_Y + _cy < _Altura_Grade - 1)){
+				_Grade [# _Centro_X + _cx, _Centro_Y + _cy] = 0;
+			}
+	}
+}
 
 
 var _ID_Tilemap = layer_get_id("Tiles_Caverna");

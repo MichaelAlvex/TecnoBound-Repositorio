@@ -1,5 +1,6 @@
 randomize();
 
+depth = 2;
 Velocidade = 1.5;
 VelH = 0;
 VelV = 0;
