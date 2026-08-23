@@ -62,7 +62,49 @@ for (var _cx = -_Raio_Seguro; _cx <= _Raio_Seguro; _cx++){
 	}
 }
 
+var _Fila_X = ds_queue_create();
+var _Fila_Y = ds_queue_create();
 
+ds_queue_enqueue(_Fila_X, _Centro_X);
+ds_queue_enqueue(_Fila_Y, _Centro_Y);
+
+_Grade[# _Centro_X, _Centro_Y] = 3;
+
+while (!ds_queue_empty(_Fila_X)){
+	var _Atual_X = ds_queue_dequeue(_Fila_X);
+	var _Atual_Y = ds_queue_dequeue(_Fila_Y);
+	var _Dir_X = [1, -1, 0, 0];
+	var _Dir_Y = [0, 0, 1, -1];
+	
+	for (var i = 0; i < 4; i++){
+		var _Viz_X = _Atual_X + _Dir_X[i];
+		var _Viz_Y = _Atual_Y + _Dir_Y[i];
+		
+		if (_Viz_X > 0 && _Viz_X < _Largura_Grade - 1 && _Viz_Y > 0 && _Viz_Y < _Altura_Grade - 1){
+			
+			if (_Grade[# _Viz_X, _Viz_Y] == 0){
+				_Grade[# _Viz_X, _Viz_Y] = 3;
+				ds_queue_enqueue(_Fila_X, _Viz_X);
+				ds_queue_enqueue(_Fila_Y, _Viz_Y);
+			}
+		}
+	}
+}
+
+ds_queue_destroy(_Fila_X);
+ds_queue_destroy(_Fila_Y);
+
+for (var _X_Sub = 0; _X_Sub < _Largura_Grade; _X_Sub++){
+	for (var _Y_Sub = 0; _Y_Sub < _Altura_Grade; _Y_Sub++){
+		
+		if (_Grade[# _X_Sub, _Y_Sub] == 0){
+			_Grade[# _X_Sub, _Y_Sub] = 1;
+		} else if (_Grade[# _X_Sub, _Y_Sub] == 3){
+			_Grade[# _X_Sub, _Y_Sub] = 0;
+			}
+		}
+	}
+	
 var _ID_Tilemap = layer_get_id("Tiles_Caverna");
 var _tilemap_id = layer_tilemap_get_id(_ID_Tilemap);
 
@@ -80,8 +122,6 @@ for (var _x = 0; _x < _Largura_Grade; _x++){
 		}
 	}
 }
-
-if (room == Menu) exit;
 
 var _qntPedras = irandom_range(5, 10);
 var _NumPedras = 0;
@@ -111,4 +151,5 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 	}
 	_Tentativas++;
 	}
-ds_grid_destroy(_Grade)
+	
+ds_grid_destroy(_Grade);
