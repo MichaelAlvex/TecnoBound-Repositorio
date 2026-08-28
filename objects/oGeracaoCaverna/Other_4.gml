@@ -1,6 +1,6 @@
 if (room == Menu) exit;
 
-var _Tamanho_Tile = 32;
+var _Tamanho_Tile = 16;
 var _Largura_Grade = room_width / _Tamanho_Tile;
 var _Altura_Grade = room_height / _Tamanho_Tile;
 

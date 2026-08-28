@@ -1,3 +1,33 @@
+if (keyboard_check_pressed(ord("1"))){
+	Slot_Selecionado = 0
+}
+if (keyboard_check_pressed(ord("2"))){
+	Slot_Selecionado = 1
+}
+if (keyboard_check_pressed(ord("3"))){
+	Slot_Selecionado = 2
+}
+if (keyboard_check_pressed(ord("4"))){
+	Slot_Selecionado = 3
+}
+if (keyboard_check_pressed(ord("5"))){
+	Slot_Selecionado = 4
+}
+if (keyboard_check_pressed(ord("6"))){
+	Slot_Selecionado = 5
+}
+if (keyboard_check_pressed(ord("7"))){
+	Slot_Selecionado = 6
+}
+if (keyboard_check_pressed(ord("8"))){
+	Slot_Selecionado = 7
+}
+if (keyboard_check_pressed(ord("9"))){
+	Slot_Selecionado = 8
+}
+if (keyboard_check_pressed(ord("0"))){
+	Slot_Selecionado = 9
+}
 if (keyboard_check_pressed(ord("E"))){
 	Inventario_Aberto = !Inventario_Aberto;
 }
