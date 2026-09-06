@@ -115,10 +115,62 @@ for (var _x = 0; _x < _Largura_Grade; _x++){
 		var _Pos_y = _y * _Tamanho_Tile;
 		
 		if (_Grade[# _x, _y] == 1){
-			tilemap_set(_tilemap_id, 1, _x, _y);
+			
+			var _Peso = 0;
+			
+			if (_y > 0 && _Grade[# _x, _y - 1] == 1){
+				_Peso += 1;
+				}else if (_y == 0){
+					 _Peso += 1;
+				}
+					
+				
+			if (_x < _Largura_Grade - 1 && _Grade[# _x + 1, _y] == 1){
+				_Peso += 2;
+				}else if (_x == _Largura_Grade - 1){
+					 _Peso += 2;
+				}
+					 
+				
+			if (_y < _Altura_Grade - 1 && _Grade[# _x, _y + 1] == 1){
+				_Peso += 4;
+				}else if (_y == _Altura_Grade - 1){
+					_Peso += 4;
+				}
+					
+				
+			if (_x > 0 && _Grade[# _x - 1, _y] == 1){
+				_Peso += 8;
+				}else if (_x == 0){
+					_Peso += 8;
+				}
+					
+			var _Lista_Tiles_Parede = [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			];
+			
+			var _Tile_Parede_Final = _Lista_Tiles_Parede[_Peso];
+			
+			tilemap_set(_tilemap_id, _Tile_Parede_Final, _x, _y);
 			instance_create_layer(_Pos_x, _Pos_y, "Instances", oParede_Invisivel);
 		} else{
-			tilemap_set(_tilemap_id, 2, _x, _y);
+			var _tile_chao = choose(1, 2, 5, 6)
+			tilemap_set(_tilemap_id, _tile_chao, _x, _y);
 		}
 	}
 }
