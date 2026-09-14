@@ -1,3 +1,6 @@
+var inst = instance_position(x, y, oParede_Invisivel);
+
+instance_destroy(inst);
 instance_create_layer(x, y, "Instances", objeto_drop);
 
 var _chance_escada = 10;

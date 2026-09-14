@@ -197,6 +197,7 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 		}
 		
 		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", _Tipo_Pedra);
+		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", oParede_Invisivel);
 		
 		_Grade [# _x_Grade, _y_Grade] = 2;
 		_NumPedras++;

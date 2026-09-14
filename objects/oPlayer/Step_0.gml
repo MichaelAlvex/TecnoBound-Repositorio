@@ -56,3 +56,14 @@ if (place_meeting (x, y + VelV, oParede_Invisivel)){
 }
 y += VelV;
 
+
+
+if (oInventario.Slot_Selecionado == 0){
+	if (!instance_exists(oBroca)){
+		instance_create_layer(x, y, "Instances", oBroca);
+	}
+}else {
+	if(instance_exists(oBroca)){
+		instance_destroy(oBroca);
+	}
+}

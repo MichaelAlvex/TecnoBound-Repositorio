@@ -1,2 +1,5 @@
 objeto_drop = oFerro
-hp = 2;
+Tempo_Quebra = 90;
+Tempo_Maximo = Tempo_Quebra;
+X_Inicial = x;
+Y_Inicial = y;

@@ -9,7 +9,7 @@ Tamanho_Slot = 20;
 var _Largura_Grade = ((Colunas - 1) * Distancia) + Tamanho_Slot;
 Margem_X = (display_get_gui_width() / 2) - (_Largura_Grade / 2);
 Margem_Y = (display_get_gui_height() / 100) * 85 - 5;
-Inventario[0] = {nome: "Picareta", sprite: sPicareta, quantidade: 1, descricao: "Item"};
+Inventario[0] = {nome: "Broca", sprite: sBroca_Inventario, quantidade: 1, descricao: "Item"};
 Item_Segurado = noone; 
 Slot_Selecionado = 0;
 
