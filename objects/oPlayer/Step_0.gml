@@ -67,3 +67,52 @@ if (oInventario.Slot_Selecionado == 0){
 		instance_destroy(oBroca);
 	}
 }
+
+if (VelH != 0 || VelV != 0){
+	
+	image_speed = 1;
+	
+	if (VelH > 0){
+		sprite_index = sPlayer_Direita;
+	} else if (VelH < 0){
+		sprite_index = sPlayer_Esquerda;
+	} else if (VelV > 0){
+		sprite_index = sPlayer_Frente;
+	} else if (VelV < 0){
+		sprite_index = sPlayer_Tras;
+	} 
+	
+} else {
+		image_speed = 0;
+		image_index = 0;
+	}
+	
+if (oInventario.Slot_Selecionado == 0){
+	
+	if (mouse_check_button(mb_left)){
+		
+		var _Dir_Mouse = point_direction(x, y + 27, mouse_x, mouse_y);
+		
+		if (_Dir_Mouse >= 30 && _Dir_Mouse <= 120){
+			sprite_index = sPlayer_Tras;
+		} else if (_Dir_Mouse > 120 && _Dir_Mouse < 240){
+			sprite_index = sPlayer_Esquerda;
+		} else if (_Dir_Mouse >= 240 && _Dir_Mouse <= 333){
+			sprite_index = sPlayer_Frente;
+		} else {
+			sprite_index = sPlayer_Direita
+			}
+		
+		if (!instance_exists(oBroca)){
+			instance_create_layer(x, y, "Instances", oBroca);
+		}
+	} else {
+		if (instance_exists(oBroca)){
+			instance_destroy(oBroca);
+		}
+	}
+} else {
+	if (instance_exists(oBroca)){
+		instance_destroy(oBroca);
+	}
+}

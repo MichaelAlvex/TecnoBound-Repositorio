@@ -8,6 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_76185100_1_5_1","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_3E2EBF07_1_5_1","path":"rooms/Room_2/Room_2.yy",},
+    {"name":"inst_1E37FB21_1","path":"rooms/Room_2/Room_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -15,6 +16,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":110,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_76185100_1_5_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76185100_1_5_1","objectId":{"name":"oPedra_Cobre","path":"objects/oPedra_Cobre/oPedra_Cobre.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":16.0,},
         {"$GMRInstance":"v4","%Name":"inst_3E2EBF07_1_5_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E2EBF07_1_5_1","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":144.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1E37FB21_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E37FB21_1","objectId":{"name":"oGeracaoCavena_Gelo","path":"objects/oGeracaoCavena_Gelo/oGeracaoCavena_Gelo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
   ],
   "name":"Room_2",
