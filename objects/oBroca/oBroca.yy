@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBroca",
-    "path":"sprites/sBroca/sBroca.yy",
+    "name":"sBroca_Direita",
+    "path":"sprites/sBroca_Direita/sBroca_Direita.yy",
   },
   "spriteMaskId":null,
   "visible":true,

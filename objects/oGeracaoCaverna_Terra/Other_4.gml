@@ -105,7 +105,7 @@ for (var _X_Sub = 0; _X_Sub < _Largura_Grade; _X_Sub++){
 		}
 	}
 	
-var _ID_Tilemap = layer_get_id("Tiles_Caverna");
+var _ID_Tilemap = layer_get_id("Tiles_Caverna_Terra");
 var _tilemap_id = layer_tilemap_get_id(_ID_Tilemap);
 
 for (var _x = 0; _x < _Largura_Grade; _x++){

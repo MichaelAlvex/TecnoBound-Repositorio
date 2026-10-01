@@ -1,3 +1,5 @@
+if (Player_Move == true){
+
 switch (Estado){
 	case "Livre":
 	var _Direita = keyboard_check(ord("D"));
@@ -115,4 +117,5 @@ if (oInventario.Slot_Selecionado == 0){
 	if (instance_exists(oBroca)){
 		instance_destroy(oBroca);
 	}
+}
 }
