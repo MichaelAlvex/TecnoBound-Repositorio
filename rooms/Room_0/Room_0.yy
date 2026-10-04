@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_76185100_1_5_4","path":"rooms/Room_0/Room_0.yy",},
-    {"name":"inst_3E2EBF07_1_5_4","path":"rooms/Room_0/Room_0.yy",},
     {"name":"inst_5DBFD9F1","path":"rooms/Room_0/Room_0.yy",},
   ],
   "isDnd":false,
@@ -15,7 +14,6 @@
     {"$GMRTileLayer":"","%Name":"Tiles_Caverna_Gelo","depth":120,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Caverna_Gelo","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":20,"SerialiseWidth":40,"TileCompressedData":[-44,-2147483648,1,2,-40,-2147483648,4,2,-2147483648,-2147483648,3,-711,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSetGelo","path":"tilesets/TileSetGelo/TileSetGelo.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":110,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_76185100_1_5_4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76185100_1_5_4","objectId":{"name":"oPedra_Cobre","path":"objects/oPedra_Cobre/oPedra_Cobre.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":16.0,},
-        {"$GMRInstance":"v4","%Name":"inst_3E2EBF07_1_5_4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E2EBF07_1_5_4","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":144.0,},
         {"$GMRInstance":"v4","%Name":"inst_5DBFD9F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DBFD9F1","objectId":{"name":"oGeracaoCavena_Gelo","path":"objects/oGeracaoCavena_Gelo/oGeracaoCavena_Gelo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
   ],
