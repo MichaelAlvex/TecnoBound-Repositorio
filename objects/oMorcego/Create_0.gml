@@ -1,0 +1,9 @@
+HP_Monstro = 200;
+Velocidade = 1.5;
+Dano = 1;
+Angulo_Onda = random(360);
+Frequencia_Onda = 0.10; 
+Amplitude_Onda = 90;
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

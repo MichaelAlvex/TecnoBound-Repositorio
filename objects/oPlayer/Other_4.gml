@@ -14,3 +14,4 @@ if (room != rOficina){
 
 	view_camera[0] = _Camera;
 }
+

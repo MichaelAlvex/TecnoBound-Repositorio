@@ -205,4 +205,41 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 	_Tentativas++;
 	}
 	
+var _qntMonstros = irandom_range(5, 10);
+var _NumMonstros = 0;
+var _Tentativas_Monstros = 0;
+
+while (_NumMonstros < _qntMonstros && _Tentativas_Monstros < 1000){
+	
+	var _x_Grade = irandom_range(3, _Largura_Grade - 4);
+	var _y_Grade = irandom_range(3, _Altura_Grade - 4);
+	
+	if (_Grade[# _x_Grade, _y_Grade] == 0){
+		
+		var _x_Monstro = (_x_Grade * _Tamanho_Tile) + (_Tamanho_Tile / 2);
+		var _y_Monstro = (_y_Grade * _Tamanho_Tile) + (_Tamanho_Tile / 2);
+		
+		var _Area_Livre = !collision_rectangle(
+            _x_Monstro - 32, _y_Monstro - 32, 
+            _x_Monstro + 32, _y_Monstro + 32, 
+            oParede_Invisivel, false, true
+        );
+		
+		if (_Area_Livre){
+			var _Chance_Monstro = random(100);
+			var _Tipo_Monstro = oSlime;
+		
+			if (_Chance_Monstro <= 30){
+				_Tipo_Monstro = oSlime;
+			}
+		
+			instance_create_layer(_x_Monstro, _y_Monstro, "Instances", _Tipo_Monstro);
+		
+			_Grade [# _x_Grade, _y_Grade] = 2;
+			_NumMonstros++;
+		}
+	}
+	_Tentativas_Monstros++;
+}
+	
 ds_grid_destroy(_Grade);

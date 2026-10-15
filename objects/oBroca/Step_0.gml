@@ -56,34 +56,7 @@ if (instance_exists(oPlayer)){
 		image_speed = 0;
 		image_index = 0;
 	}
+	image_speed = 1;
+}
 
-	if (mouse_check_button(mb_left)){
-		
-		image_speed = 1;
-		var _Pedra = instance_position(mouse_x, mouse_y, oPedra_Mae);
-		
-		if (_Pedra != noone && point_distance(x, y, _Pedra.x + 16, _Pedra.y + 16) <= 48){
-			
-			_Pedra.Tempo_Quebra--;
-				
-				_Pedra.x = _Pedra.X_Inicial + random_range(-1, 1);
-				_Pedra.y = _Pedra.Y_Inicial + random_range(-1, 1);
-			
-			if(_Pedra.Tempo_Quebra <= 0){
-				with(_Pedra){
-					
-					var _Parede = instance_place(x, y, oParede_Invisivel);
-					
-					if (_Parede != noone){
-						instance_destroy(_Parede)
-					}
-					
-					instance_destroy()
-				}
-			}
-		}
-	} else {
-		image_speed = 0;
-		image_index = 0;
-	}image_speed = 1
-}	
+	

@@ -1,0 +1,12 @@
+Velocidade = 2;
+VelH = 0;
+VelV = 0;
+Tempo_Entre_Pulos = irandom_range(70, 110);
+Timer_Pulo = irandom_range(0, Tempo_Entre_Pulos);
+Duracao_Pulo = 20;
+Timer_No_Ar = 0;
+HP_Monstro = 250;
+dano = 1;
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

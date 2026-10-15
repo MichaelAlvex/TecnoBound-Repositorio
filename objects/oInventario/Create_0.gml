@@ -1,5 +1,5 @@
 Inventario_Aberto = false;
-Tamanho_HotBar = 3;  
+Tamanho_HotBar = 1;  
 Linhas = 3;
 Colunas = 4;        
 Tamanho_Inventario = Tamanho_HotBar + (Linhas * Colunas); 

@@ -1,6 +1,10 @@
 if (Player_Move == true){
 
-switch (Estado){
+if (Timer_Empurrao > 0){
+	Timer_Empurrao--;
+} else {
+
+	switch (Estado){
 	case "Livre":
 	var _Direita = keyboard_check(ord("D"));
 	var _Esquerda = keyboard_check(ord("A"));
@@ -28,6 +32,8 @@ switch (Estado){
 		VelV = 0;
 	}
 	break;
+
+
 	
 	case "Rolando":
 	
@@ -88,7 +94,7 @@ if (VelH != 0 || VelV != 0){
 		image_speed = 0;
 		image_index = 0;
 	}
-	
+}
 if (oInventario.Slot_Selecionado == 0){
 	
 	if (mouse_check_button(mb_left)){
@@ -119,3 +125,51 @@ if (oInventario.Slot_Selecionado == 0){
 	}
 }
 }
+
+if (IFrames > 0){
+	IFrames--;
+}
+
+if (HP_Player <= 0){
+	room_goto(Room_0);
+}
+
+
+
+
+if (Cooldown_Ataque > 0){
+	Cooldown_Ataque--;
+}
+
+if (oInventario.Slot_Selecionado == 0 && mouse_check_button(mb_left)){
+	var _Monstro = noone;
+	
+	with (oMonstro_Mae) {
+		if (point_distance(mouse_x, mouse_y, x, y) <= 32) {
+			_Monstro = id;
+			break; 
+		}
+	}
+		
+	if (_Monstro != noone){
+			
+		_Distancia = point_distance(x, y, _Monstro.x, _Monstro.y);
+		
+		if (_Distancia <= 44){
+			
+			if (Cooldown_Ataque <= 0){
+				
+				_Monstro.HP_Monstro -= 50;
+				_Monstro.Monstro_Tremer_Timer = 10;
+				Cooldown_Ataque = 12;
+				
+				if(_Monstro.HP_Monstro <= 0){
+					with(_Monstro){
+						instance_destroy();
+					}
+				}
+			}
+		}
+	}
+}
+		
