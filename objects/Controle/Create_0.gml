@@ -1,0 +1,1 @@
+etapaMontagem = 0;
