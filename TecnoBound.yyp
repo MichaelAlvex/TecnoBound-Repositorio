@@ -76,6 +76,7 @@
     {"id":{"name":"Room_20","path":"rooms/Room_20/Room_20.yy",},},
     {"id":{"name":"Room_3","path":"rooms/Room_3/Room_3.yy",},},
     {"id":{"name":"Room_4","path":"rooms/Room_4/Room_4.yy",},},
+    {"id":{"name":"Conquista_sApp","path":"sprites/Conquista_sApp/Conquista_sApp.yy",},},
     {"id":{"name":"sAluminio","path":"sprites/sAluminio/sAluminio.yy",},},
     {"id":{"name":"sApp_Ajuda","path":"sprites/sApp_Ajuda/sApp_Ajuda.yy",},},
     {"id":{"name":"sApp_Conquista","path":"sprites/sApp_Conquista/sApp_Conquista.yy",},},
