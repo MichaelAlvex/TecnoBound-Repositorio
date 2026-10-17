@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"Conquista_sApp",
+  "%Name":"conquista_sApp",
   "bboxMode":0,
-  "bbox_bottom":24,
-  "bbox_left":6,
-  "bbox_right":24,
-  "bbox_top":7,
+  "bbox_bottom":49,
+  "bbox_left":0,
+  "bbox_right":49,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"322dfa73-01c2-4e04-ab18-04fb793d8021","name":"322dfa73-01c2-4e04-ab18-04fb793d8021","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2429e0a2-4bf4-4c14-ac33-b3252f0224be","name":"2429e0a2-4bf4-4c14-ac33-b3252f0224be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":50,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5689e81c-d2f4-41c4-aa84-747dff3b5eb4","blendMode":0,"displayName":"default","isLocked":false,"name":"5689e81c-d2f4-41c4-aa84-747dff3b5eb4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"337c37d3-acb1-46d5-be87-17dce0adc1d6","blendMode":0,"displayName":"default","isLocked":false,"name":"337c37d3-acb1-46d5-be87-17dce0adc1d6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Conquista_sApp",
+  "name":"conquista_sApp",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Conquista_sApp",
+    "%Name":"conquista_sApp",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Conquista_sApp",
+    "name":"conquista_sApp",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"322dfa73-01c2-4e04-ab18-04fb793d8021","path":"sprites/Conquista_sApp/Conquista_sApp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cda8a1e3-5cec-40dd-a969-9e4291964b34","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2429e0a2-4bf4-4c14-ac33-b3252f0224be","path":"sprites/conquista_sApp/conquista_sApp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a5216b42-7106-4f5c-a728-e7e57a040f78","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":50,
 }

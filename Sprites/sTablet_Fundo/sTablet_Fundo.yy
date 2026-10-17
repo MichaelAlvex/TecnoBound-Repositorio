@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"sTablet_Fundo",
   "bboxMode":0,
-  "bbox_bottom":146,
+  "bbox_bottom":147,
   "bbox_left":0,
   "bbox_right":279,
   "bbox_top":7,
