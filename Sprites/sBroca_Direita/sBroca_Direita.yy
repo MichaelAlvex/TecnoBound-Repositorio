@@ -3,23 +3,23 @@
   "%Name":"sBroca_Direita",
   "bboxMode":0,
   "bbox_bottom":11,
-  "bbox_left":2,
+  "bbox_left":0,
   "bbox_right":15,
-  "bbox_top":5,
+  "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"7894fcf9-d83c-4b93-a4d9-6793531af768","name":"7894fcf9-d83c-4b93-a4d9-6793531af768","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d9736475-c937-4ef9-8f18-a0e1d91ec7b1","name":"d9736475-c937-4ef9-8f18-a0e1d91ec7b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4e5e9008-2dd0-4517-ae6e-20f507eb990b","blendMode":0,"displayName":"default","isLocked":false,"name":"4e5e9008-2dd0-4517-ae6e-20f507eb990b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5d92905c-1bbe-4bef-bc00-ed836ede27a6","blendMode":0,"displayName":"default","isLocked":false,"name":"5d92905c-1bbe-4bef-bc00-ed836ede27a6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sBroca_Direita",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7894fcf9-d83c-4b93-a4d9-6793531af768","path":"sprites/sBroca_Direita/sBroca_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bfe4f07c-4a26-4b23-805a-0a1e1a32006a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9736475-c937-4ef9-8f18-a0e1d91ec7b1","path":"sprites/sBroca_Direita/sBroca_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"281d084a-01e6-4153-8f0c-a3e5b5066ab2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

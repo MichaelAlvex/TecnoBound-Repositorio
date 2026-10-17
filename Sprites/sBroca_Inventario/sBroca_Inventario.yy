@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sBroca_Inventario",
   "bboxMode":0,
-  "bbox_bottom":13,
-  "bbox_left":1,
-  "bbox_right":15,
+  "bbox_bottom":14,
+  "bbox_left":0,
+  "bbox_right":14,
   "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"99dae49b-36ef-4e09-9510-3f7c3005719a","name":"99dae49b-36ef-4e09-9510-3f7c3005719a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f69816ae-0ed7-48aa-a1ce-a13128ca583c","name":"f69816ae-0ed7-48aa-a1ce-a13128ca583c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8cedd92d-08a8-4f0d-a7dd-fa6822643b6c","blendMode":0,"displayName":"default","isLocked":false,"name":"8cedd92d-08a8-4f0d-a7dd-fa6822643b6c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"67942a0f-cc63-4948-b381-eafb6083ea21","blendMode":0,"displayName":"default","isLocked":false,"name":"67942a0f-cc63-4948-b381-eafb6083ea21","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sBroca_Inventario",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"99dae49b-36ef-4e09-9510-3f7c3005719a","path":"sprites/sBroca_Inventario/sBroca_Inventario.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8aa30ad5-70e4-4579-9acc-e2916c421b36","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f69816ae-0ed7-48aa-a1ce-a13128ca583c","path":"sprites/sBroca_Inventario/sBroca_Inventario.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b8152ff7-6f92-4512-bf2a-963a50450bbe","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
