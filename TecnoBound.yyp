@@ -115,6 +115,8 @@
     {"id":{"name":"sPlayer_Direita","path":"sprites/sPlayer_Direita/sPlayer_Direita.yy",},},
     {"id":{"name":"sPlayer_Esquerda","path":"sprites/sPlayer_Esquerda/sPlayer_Esquerda.yy",},},
     {"id":{"name":"sPlayer_Frente","path":"sprites/sPlayer_Frente/sPlayer_Frente.yy",},},
+    {"id":{"name":"sPlayer_Pulando","path":"sprites/sPlayer_Pulando/sPlayer_Pulando.yy",},},
+    {"id":{"name":"sPlayer_Rolando","path":"sprites/sPlayer_Rolando/sPlayer_Rolando.yy",},},
     {"id":{"name":"sPlayer_Tras","path":"sprites/sPlayer_Tras/sPlayer_Tras.yy",},},
     {"id":{"name":"sQuartzo","path":"sprites/sQuartzo/sQuartzo.yy",},},
     {"id":{"name":"sSlime","path":"sprites/sSlime/sSlime.yy",},},
