@@ -94,6 +94,7 @@
     {"id":{"name":"sBroca_Inventario","path":"sprites/sBroca_Inventario/sBroca_Inventario.yy",},},
     {"id":{"name":"sBtn_Feito","path":"sprites/sBtn_Feito/sBtn_Feito.yy",},},
     {"id":{"name":"sBtn_Home","path":"sprites/sBtn_Home/sBtn_Home.yy",},},
+    {"id":{"name":"sBtn_saida","path":"sprites/sBtn_saida/sBtn_saida.yy",},},
     {"id":{"name":"sCobre","path":"sprites/sCobre/sCobre.yy",},},
     {"id":{"name":"sEscada","path":"sprites/sEscada/sEscada.yy",},},
     {"id":{"name":"sGelo","path":"sprites/sGelo/sGelo.yy",},},

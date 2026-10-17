@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"TecnoBound",
-    "path":"TecnoBound.yyp",
+    "name":"Monstros",
+    "path":"folders/Sprites/Monstros.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
