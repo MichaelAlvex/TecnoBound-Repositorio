@@ -14,7 +14,7 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"c8a74244-3bc1-4104-b26c-0494c883b314","name":"c8a74244-3bc1-4104-b26c-0494c883b314","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"ebbff6f6-9ed6-4e76-9ea5-9ccac1ad3941","name":"ebbff6f6-9ed6-4e76-9ea5-9ccac1ad3941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"7772d0af-d5f7-450a-9209-1ae5d4b7880f","name":"7772d0af-d5f7-450a-9209-1ae5d4b7880f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2bdb9b2c-95a7-420f-b192-b2a513bd2135","name":"2bdb9b2c-95a7-420f-b192-b2a513bd2135","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"79f38afc-c30f-4314-95b4-ec8f5327d30b","name":"79f38afc-c30f-4314-95b4-ec8f5327d30b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -78,8 +78,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ebbff6f6-9ed6-4e76-9ea5-9ccac1ad3941","path":"sprites/sPlayer_Direita/sPlayer_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a184c24c-2884-42e1-944a-40ba444d48d4","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7772d0af-d5f7-450a-9209-1ae5d4b7880f","path":"sprites/sPlayer_Direita/sPlayer_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0c413dde-9b56-46a8-a61a-2fa39456b83c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2bdb9b2c-95a7-420f-b192-b2a513bd2135","path":"sprites/sPlayer_Direita/sPlayer_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"15853baf-5088-49ea-b9d5-8730dda98c75","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"79f38afc-c30f-4314-95b4-ec8f5327d30b","path":"sprites/sPlayer_Direita/sPlayer_Direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1261ff31-2f95-4a0e-906e-bf241030abf8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
