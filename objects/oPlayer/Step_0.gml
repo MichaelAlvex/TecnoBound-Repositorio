@@ -5,6 +5,7 @@ if (Timer_Empurrao > 0){
 } else {
 
 	switch (Estado){
+		
 	case "Livre":
 	var _Direita = keyboard_check(ord("D"));
 	var _Esquerda = keyboard_check(ord("A"));
@@ -34,16 +35,38 @@ if (Timer_Empurrao > 0){
 	break;
 
 
-	
 	case "Rolando":
-	
+
 	VelH = lengthdir_x(VelRolagem, Direcao_Rolagem);
 	VelV = lengthdir_y(VelRolagem, Direcao_Rolagem);
+	
+	image_speed = 1;
+	
+	if (Direcao_Rolagem >= 30 && Direcao_Rolagem <= 120){
+			sprite_index = sPlayer_Rolando_Tras;
+		} else if (Direcao_Rolagem > 120 && Direcao_Rolagem < 240){
+			sprite_index = sPlayer_Rolando_Esquerda;
+		} else if (Direcao_Rolagem >= 240 && Direcao_Rolagem <= 333){
+			sprite_index = sPlayer_Rolando_Frente;
+		} else {
+			sprite_index = sPlayer_Rolando_Direita
+		}
 	
 	Timer_Rolagem--;
 	
 	if (Timer_Rolagem <= 0){
 		Estado = "Livre";
+		
+		if (sprite_index == sPlayer_Rolando_Frente){
+			sprite_index = sPlayer_Tras;
+		} else if (sprite_index == sPlayer_Rolando_Esquerda){
+			sprite_index = sPlayer_Esquerda;
+		} else if (sprite_index == sPlayer_Rolando_Tras){
+			sprite_index = sPlayer_Frente;
+		} else {
+			sprite_index = sPlayer_Direita
+		}
+		
 	}
 	break;
 }
@@ -65,6 +88,7 @@ if (place_meeting (x, y + VelV, oParede_Invisivel)){
 y += VelV;
 
 
+if (Estado == "Livre") {
 
 if (oInventario.Slot_Selecionado == 0){
 	if (!instance_exists(oBroca)){
@@ -75,6 +99,7 @@ if (oInventario.Slot_Selecionado == 0){
 		instance_destroy(oBroca);
 	}
 }
+
 
 if (VelH != 0 || VelV != 0){
 	
@@ -112,7 +137,9 @@ if (oInventario.Slot_Selecionado == 0){
 			}
 		
 		if (!instance_exists(oBroca)){
-			instance_create_layer(x, y, "Instances", oBroca);
+			var _Broca = instance_create_layer(x, y, "Instances", oBroca);
+			_Broca.x = x;
+			_Broca.y = y;
 		}
 	} else {
 		if (instance_exists(oBroca)){
@@ -123,6 +150,7 @@ if (oInventario.Slot_Selecionado == 0){
 	if (instance_exists(oBroca)){
 		instance_destroy(oBroca);
 	}
+}
 }
 }
 
@@ -141,7 +169,7 @@ if (Cooldown_Ataque > 0){
 	Cooldown_Ataque--;
 }
 
-if (oInventario.Slot_Selecionado == 0 && mouse_check_button(mb_left)){
+if (oPlayer.Estado == "Livre" && oInventario.Slot_Selecionado == 0 && mouse_check_button(mb_left)){
 	var _Monstro = noone;
 	
 	with (oMonstro_Mae) {

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Base_teclado",
+  "%Name":"Base_Teclado",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Base_teclado",
+  "name":"Base_Teclado",
   "overriddenProperties":[],
   "parent":{
-    "name":"Teclado",
-    "path":"folders/Objetos/Teclado.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite72",
-    "path":"sprites/Sprite72/Sprite72.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

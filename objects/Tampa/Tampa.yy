@@ -10,8 +10,8 @@
   "name":"Tampa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Mouse",
-    "path":"folders/Objetos/Mouse.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite60",
-    "path":"sprites/Sprite60/Sprite60.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

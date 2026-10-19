@@ -1,0 +1,256 @@
+[33mcommit fd9bdbe3d8dc3e94e5af617a565286208f979407[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: MichaelAlvex <michaelalveso824@gmail.com>
+Date:   Sun Oct 18 18:12:12 2026 -0300
+
+    Resolve conflito mantendo as alteracoes locais
+
+[33mcommit 9957dd6d2006ce065121dba4727b8c4fd7bf2bea[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Sat Oct 17 19:56:15 2026 -0300
+
+    app e player dano
+
+[33mcommit d462c28ddaa4dbe274cefab6b31388ba691c0577[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Sat Oct 17 18:13:59 2026 -0300
+
+    sApps
+
+[33mcommit 5b42932f0b95ef35b5cc103f156aaafb6db59a4a[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 22:49:41 2026 -0300
+
+    Nova Broca
+
+[33mcommit 2c52dca6f3d2cae08a7b4461e94967a924234975[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 22:25:51 2026 -0300
+
+    sPlayer rolando e pulando
+
+[33mcommit 83272f1ff1aab203c9aa39bbddfafc91b85a674f[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 21:22:42 2026 -0300
+
+    app de saida
+
+[33mcommit 31e2c8561d6cb90e7bc8f3c5f9fa3a28016df3ee[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 21:13:32 2026 -0300
+
+    Slime e morcego 32x32
+
+[33mcommit 5714746c2cafbab34760e075483d2d6dd518ae83[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 21:03:45 2026 -0300
+
+    Atualizacao da personagem no projeto
+
+[33mcommit fd3d627439e00b8175ec3560a0a0802b4ee1a9ed[m
+Author: bebea-240 <anahbea2001@gmail.com>
+Date:   Fri Oct 16 20:31:02 2026 -0300
+
+    Registra Conquista_sApp no projeto
+
+[33mcommit aae9cfd6ad38ac1de05bb31c79d7c666fb891184[m
+Merge: 7573a2a a9e189b
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Fri Oct 16 20:02:20 2026 -0300
+
+    Merge pull request #1 from MichaelAlvex/sprite-conquista-app
+    
+    Adiciona sprite Conquista_App
+
+[33mcommit a9e189b0ec3976b9c34e87359268e3d57a4682b3[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Fri Oct 16 19:56:09 2026 -0300
+
+    Adiciona sprite Conquista_App
+    
+    App novo (Conquista)
+
+[33mcommit 7573a2af22d1f95362ca28e02e14f70a48fb6e5a[m
+Merge: 10c217b c269ad1
+Author: MichaelAlvex <michaelalveso824@gmail.com>
+Date:   Thu Oct 15 19:50:16 2026 -0300
+
+    Adicionada barra de vida do player, adicionados inimigos morcego e slime, ambos com mecanicas de movimentacao unicas e capacidade de causar e receber dano.
+
+[33mcommit 10c217b6525d9c43400ed252e6b4bbd77264081d[m
+Author: MichaelAlvex <michaelalveso824@gmail.com>
+Date:   Thu Oct 15 19:41:11 2026 -0300
+
+    Adicionada barra de vida do player, adicionados inimigos slimes e morcegos, com movimentacoes proprias e capacidade de receber e causar dano
+
+[33mcommit c269ad1af5ff57ba043dc569668d802360603e2d[m
+Merge: ec5bf6d 7522ca6
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Thu Oct 15 19:08:45 2026 -0300
+
+    Integra alterações remotas ao projeto local
+
+[33mcommit ec5bf6dd0222a03fd176d8ecdcc670f4b3c8d30e[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Thu Oct 15 18:53:37 2026 -0300
+
+    Criação da parte de recebimento dos pedidos da primeira fase e inicio da configuração da oficina (incompleta)
+
+[33mcommit 7522ca63e43bc69762276d08f34a333c5cd3edd6[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:08:29 2026 -0300
+
+    SLIME
+    
+    Slime verde
+
+[33mcommit 2d753d0d14a0f77f018182b4a87742b7107b9bf2[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:07:51 2026 -0300
+
+    Delete Sprites/slime directory
+
+[33mcommit 80c1a02165fae18e950ba0267f71867cba55eb98[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:07:21 2026 -0300
+
+    Add files via upload
+
+[33mcommit 8d9e6ec52fbb63cbf8f239484a3cd67c5f189dce[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:06:31 2026 -0300
+
+    Delete Sprites/aranha directory
+
+[33mcommit ad53179075a9441152a89ac03cfa35be00634f2a[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:04:29 2026 -0300
+
+    Add files via upload
+
+[33mcommit d2ebaada95f97eb48525f3f6cbc5970a22f8f2de[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Wed Oct 14 21:01:32 2026 -0300
+
+    Delete Sprites/morcego directory
+
+[33mcommit 3dbbc8fcb34498e037f65338226fed3fec674ec5[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 20:09:37 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor9 directory
+
+[33mcommit 85a9d3320ccf76544fe598275ce2ba9a6ffd9b06[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 20:09:15 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor8 directory
+
+[33mcommit 4d61a506a89759b064f2e079c0db902811a48e0d[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 20:08:32 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor2 directory
+
+[33mcommit 535661175fc2df9ca0602319d1fffedf9891ad13[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 20:08:05 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor1 directory
+
+[33mcommit 66292d50f3273c4bb57b9be4ad9215d5bbd0de8a[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 19:55:29 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor7 directory
+
+[33mcommit c9c2fff23e52c1d0576fc59bb65f4b0b7bf1ce9d[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Mon Oct 12 19:53:51 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor/s_monitor3 directory
+
+[33mcommit da4d426200005a5fa830a0628894083bfae9d4f8[m
+Author: MichaelAlvex <michaelalveso824@gmail.com>
+Date:   Sun Oct 4 20:46:39 2026 -0300
+
+    Corrigidos tiles dos biomas de terra e lava, corrigido bug em que o player nao era gerado ao voltar da oficina para o primeiro nivel do bioma de gelo
+
+[33mcommit b51d11db412914a85bc89c4a500b728807d88736[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Fri Oct 2 12:06:43 2026 -0300
+
+    mini boss
+
+[33mcommit d1761f468348adcbfb639556614b5a02a35b2f03[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 18:34:35 2026 -0300
+
+    Add files via upload
+
+[33mcommit 9e85bdad3fb7151ad1659421f26c8ba313334cbb[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 18:20:36 2026 -0300
+
+    Add files via upload
+
+[33mcommit 2d99ff265bff2d9fd409af0cd2d56dfe45b159c1[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 18:15:50 2026 -0300
+
+    Add files via upload
+
+[33mcommit 793e2519c76d04bc472fad20e3734298a34baf99[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 18:11:08 2026 -0300
+
+    Add files via upload
+    
+    sprite do mouse
+
+[33mcommit e4c25094849f1b170422ab2414650341e6300107[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 17:57:58 2026 -0300
+
+    Delete Sprites/periféricos/s_monitor directory
+
+[33mcommit 281f10089a5381601cca6787d5c13bf717abeff5[m
+Author: Ana Beatriz <anahbea2001@gmail.com>
+Date:   Thu Oct 1 17:55:04 2026 -0300
+
+    Add files via upload
+
+[33mcommit 5ac6d37ff210e01857bbd730b0c3f17bde9ecb2a[m
+Author: MichaelAlvex <michaelalveso824@gmail.com>
+Date:   Wed Sep 30 21:24:45 2026 -0300
+
+    Trocado estilo de renderizacao da broca, adicionadas coloracoes diferentes pra cada bioma, adicionado menu com inventario funcional e teleporte para futura sala de oficina
+
+[33mcommit b50d187a05d32b167e8ee9fc609adeee60be3b02[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Mon Sep 28 21:58:17 2026 -0300
+
+    Delete Sprites/Boss_Golem directory
+
+[33mcommit 7d3936641025f33f53a2f7ff89b259ad473f8bb6[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Mon Sep 28 21:57:41 2026 -0300
+
+    Delete Boss_Árvore directory
+
+[33mcommit dca3daad6293655d51d1fd4efe68290d9af933e8[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Mon Sep 28 21:55:59 2026 -0300
+
+    Add files via upload
+
+[33mcommit 052976b1e6f57f600e6e7c08c2d1006a518877ee[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Mon Sep 28 21:54:27 2026 -0300
+
+    Add files via upload
+
+[33mcommit 3778f8e96414296be82f5444b00622383b133c48[m
+Author: Marina Vieira Prado <pradomari403@gmail.com>
+Date:   Mon Sep 28 21:53:39 2026 -0300
+
+    Add files v

@@ -8,8 +8,8 @@
   "name":"Recusar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite77",
-    "path":"sprites/Sprite77/Sprite77.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

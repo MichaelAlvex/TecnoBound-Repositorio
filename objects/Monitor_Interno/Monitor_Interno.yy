@@ -10,8 +10,8 @@
   "name":"Monitor_Interno",
   "overriddenProperties":[],
   "parent":{
-    "name":"Monitor",
-    "path":"folders/Objetos/Monitor.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite64",
-    "path":"sprites/Sprite64/Sprite64.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

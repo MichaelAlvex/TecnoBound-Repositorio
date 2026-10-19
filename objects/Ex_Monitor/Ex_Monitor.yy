@@ -10,8 +10,8 @@
   "name":"Ex_Monitor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Monitor",
-    "path":"folders/Objetos/Monitor.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite63",
-    "path":"sprites/Sprite63/Sprite63.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

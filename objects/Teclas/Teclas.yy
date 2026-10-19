@@ -10,8 +10,8 @@
   "name":"Teclas",
   "overriddenProperties":[],
   "parent":{
-    "name":"Teclado",
-    "path":"folders/Objetos/Teclado.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite74",
-    "path":"sprites/Sprite74/Sprite74.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

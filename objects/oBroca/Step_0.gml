@@ -27,7 +27,7 @@ if (instance_exists(oPlayer)){
 	x += random_range(-0.75, 0.75);
 	y += random_range(-0.75, 0.75);
 	
-	if (mouse_check_button(mb_left)){
+	if (oPlayer.Estado == "Livre" && mouse_check_button(mb_left)){
 		
 		image_speed = 1;
 		var _Pedra = instance_position(mouse_x, mouse_y, oPedra_Mae);
@@ -59,4 +59,5 @@ if (instance_exists(oPlayer)){
 	image_speed = 1;
 }
 
+visible = (oPlayer.Estado != "Rolando");
 	

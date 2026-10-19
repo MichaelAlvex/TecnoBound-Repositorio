@@ -1,3 +1,4 @@
+depth = oPlayer.depth - 20;
 HP_Monstro = 200;
 Velocidade = 1.5;
 Dano = 1;
