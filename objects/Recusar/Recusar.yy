@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite68",
+    "path":"sprites/Sprite68/Sprite68.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
