@@ -1,0 +1,2 @@
+monitorCompleto = false;
+mensagemExibida = false;

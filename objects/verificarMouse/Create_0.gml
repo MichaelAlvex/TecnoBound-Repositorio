@@ -1,0 +1,2 @@
+verificacaoFeita = false;
+montagemCorreta = false;

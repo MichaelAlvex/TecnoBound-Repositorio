@@ -4,6 +4,3 @@ offsetY = 0;
 encaixada = false;
 posicaoAlvoX = 256;
 posicaoAlvoY = 160;
-global.baseMontada = false;
-global.internaMontada = false;
-global.rolamentoMontado = false;

@@ -10,8 +10,8 @@
   "name":"Tela",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Montagem_de_Pecas",
+    "path":"folders/Objetos/Montagem_de_Pecas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite88",
+    "path":"sprites/Sprite88/Sprite88.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

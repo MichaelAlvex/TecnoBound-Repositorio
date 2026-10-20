@@ -1,0 +1,2 @@
+tecladoCompleto = false;
+mensagemExibida = false;
