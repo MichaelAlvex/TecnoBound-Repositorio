@@ -30,7 +30,7 @@ if (Tablet_Aberto == true){
 	
 	else {
 		
-		draw_sprite(sBtn_Home, 0, Pos_Fundo_X + 261, Pos_Y_Apps1);
+		draw_sprite(sBtn_Home, 0, Pos_Fundo_X + 257, Pos_Y_Apps1);
 		
 		if (Tela_Atual == "oficina"){
 		

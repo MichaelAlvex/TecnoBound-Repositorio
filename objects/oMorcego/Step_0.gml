@@ -1,5 +1,5 @@
 if (instance_exists(oPlayer)){
-	var _Dir_Alvo = point_direction(x, y, oPlayer.x, oPlayer.y);
+	var _Dir_Alvo = point_direction(x, y, oPlayer.x + 16, oPlayer.y + 29);
 	
 	Angulo_Onda += Frequencia_Onda;
 	

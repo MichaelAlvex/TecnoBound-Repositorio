@@ -1,6 +1,6 @@
 if (IFrames == 0) {
 	HP_Player -= 1;
-	IFrames = 10;
+	IFrames = 50;
 
 Timer_Empurrao = 4;
 

@@ -1,6 +1,6 @@
 depth = oPlayer.depth - 20;
-HP_Monstro = 200;
-Velocidade = 1.5;
+HP_Monstro = 150;
+Velocidade = 2.5;
 Dano = 1;
 Angulo_Onda = random(360);
 Frequencia_Onda = 0.10; 

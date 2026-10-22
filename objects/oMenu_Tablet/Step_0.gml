@@ -10,7 +10,7 @@ if (Tablet_Aberto == false || Tela_Atual == "home"){
 
 if (Tablet_Aberto == true){
 	
-	var _home_btn_x = Pos_Fundo_X + 261;
+	var _home_btn_x = Pos_Fundo_X + 257;
 	var _home_btn_y = Pos_Y_Apps1;
 	var _tam_btn = 16;
 	
@@ -123,6 +123,7 @@ if (Tablet_Aberto == true){
 		if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Pos_Fundo_X + 115, Pos_Y_Apps1 + 45, Pos_Fundo_X + 115 + _tp_btn_tam, Pos_Y_Apps1 + 45 + _tp_btn_tam)){
 			if (mouse_check_button_pressed(mb_left)){
 				
+				Tablet_Aberto = !Tablet_Aberto
 				room_goto(rOficina);
 			}
 		}

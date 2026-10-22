@@ -1,0 +1,10 @@
+Velocidade = 0.5;
+VelH = 0;
+VelV = 0;
+HP_Monstro = 150;
+Distancia_Disparo = 120;
+Cooldown_Tiro = 0;
+Tempo_Entre_Tiros = 180;
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

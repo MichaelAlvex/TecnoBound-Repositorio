@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Colisao_Paredes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Colisao_Paredes",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

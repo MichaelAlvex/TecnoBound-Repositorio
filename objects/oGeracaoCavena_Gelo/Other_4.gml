@@ -47,6 +47,14 @@ repeat (_Refinamentos){
 	}
 }
 
+ds_grid_set_region(_Grade, 0, 0, _Largura_Grade - 1, 0, 1);
+
+ds_grid_set_region(_Grade, 0, _Altura_Grade - 1, _Largura_Grade - 1, _Altura_Grade - 1, 1);
+
+ds_grid_set_region(_Grade, 0, 0, 0, _Altura_Grade - 1, 1);
+
+ds_grid_set_region(_Grade, _Largura_Grade - 1, 0, _Largura_Grade - 1, _Altura_Grade - 1, 1);
+
 ds_grid_destroy(_Grade_Temp);
 
 var _Centro_X = _Largura_Grade div 2;
@@ -206,7 +214,7 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 	}
 	
 	
-var _qntMonstros = irandom_range(5, 10);
+var _qntMonstros = irandom_range(10, 10);
 var _NumMonstros = 0;
 var _Tentativas_Monstros = 0;
 
@@ -231,7 +239,7 @@ while (_NumMonstros < _qntMonstros && _Tentativas_Monstros < 1000){
 			var _Tipo_Monstro = oSlime;
 		
 			if (_Chance_Monstro <= 30){
-				_Tipo_Monstro = oMorcego;
+				_Tipo_Monstro = oSlime;
 			}
 		
 			instance_create_layer(_x_Monstro, _y_Monstro, "Instances", _Tipo_Monstro);

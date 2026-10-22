@@ -1,6 +1,6 @@
-if (keyboard_check_pressed(ord("1"))) Slot_Selecionado = 0;
-if (keyboard_check_pressed(ord("2"))) Slot_Selecionado = 1;
-if (keyboard_check_pressed(ord("3"))) Slot_Selecionado = 2;
+if (instance_exists(oPlayer)) {
+    visible = oPlayer.visible; 
+}
 
 if (oMenu_Tablet.Tela_Atual == "inventario"){
     Inventario_Aberto = true;
