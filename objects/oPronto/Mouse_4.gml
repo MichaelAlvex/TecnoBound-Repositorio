@@ -1,1 +1,1 @@
-room_goto(Conclusao);
+room_goto(Envio);

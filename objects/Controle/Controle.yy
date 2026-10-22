@@ -8,8 +8,8 @@
   "name":"Controle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Montagem_de_Pecas",
-    "path":"folders/Objetos/Montagem_de_Pecas.yy",
+    "name":"1fase",
+    "path":"folders/Objetos/Montagem_de_Pecas/1fase.yy",
   },
   "parentObjectId":null,
   "persistent":false,

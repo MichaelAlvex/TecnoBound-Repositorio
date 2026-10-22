@@ -16,3 +16,6 @@ if (!variable_global_exists("pedidoAceito")) {
 if (!variable_global_exists("pedidoTexto")) {
     global.pedidoTexto = "";
 }
+if (!variable_global_exists("perifericoEscolhido")) {
+    global.perifericoEscolhido = -1;
+}

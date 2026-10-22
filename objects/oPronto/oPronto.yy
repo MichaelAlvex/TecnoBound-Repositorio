@@ -9,8 +9,8 @@
   "name":"oPronto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Montagem_de_Pecas",
-    "path":"folders/Objetos/Montagem_de_Pecas.yy",
+    "name":"Mouse",
+    "path":"folders/Objetos/Montagem_de_Pecas/1fase/Mouse.yy",
   },
   "parentObjectId":null,
   "persistent":false,

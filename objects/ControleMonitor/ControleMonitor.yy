@@ -9,8 +9,8 @@
   "name":"ControleMonitor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Montagem_de_Pecas",
-    "path":"folders/Objetos/Montagem_de_Pecas.yy",
+    "name":"Monitor",
+    "path":"folders/Objetos/Montagem_de_Pecas/1fase/Monitor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

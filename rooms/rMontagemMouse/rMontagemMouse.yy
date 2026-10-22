@@ -31,8 +31,8 @@
   ],
   "name":"rMontagemMouse",
   "parent":{
-    "name":"Cenas",
-    "path":"folders/Cenas.yy",
+    "name":"1fase",
+    "path":"folders/Cenas/1fase.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
