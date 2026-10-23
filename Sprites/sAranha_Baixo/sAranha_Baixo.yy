@@ -13,7 +13,7 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"13e9a651-1914-4b50-8201-8f11f9cd4378","name":"13e9a651-1914-4b50-8201-8f11f9cd4378","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"c5727e70-439e-49f7-b123-9f7411bd28a4","name":"c5727e70-439e-49f7-b123-9f7411bd28a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aa06de07-42d1-4471-91f3-f24df87089a5","name":"aa06de07-42d1-4471-91f3-f24df87089a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"8ec18bf7-8a31-4d95-972a-ef7922941c73","name":"8ec18bf7-8a31-4d95-972a-ef7922941c73","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"6f8db0b5-572f-4d8f-b9e8-d1fc6eca95d4","name":"6f8db0b5-572f-4d8f-b9e8-d1fc6eca95d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
@@ -75,8 +75,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13e9a651-1914-4b50-8201-8f11f9cd4378","path":"sprites/sAranha_Baixo/sAranha_Baixo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"020e23ae-2a29-44cf-9583-b6539ca8a370","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c5727e70-439e-49f7-b123-9f7411bd28a4","path":"sprites/sAranha_Baixo/sAranha_Baixo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c86ce716-3bc1-4543-a11f-a222a72b5c29","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aa06de07-42d1-4471-91f3-f24df87089a5","path":"sprites/sAranha_Baixo/sAranha_Baixo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bdec16df-0902-4d35-87ef-39750d5a6ba7","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ec18bf7-8a31-4d95-972a-ef7922941c73","path":"sprites/sAranha_Baixo/sAranha_Baixo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a907465a-3ccd-4b2a-b751-f6afb1db0f83","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
