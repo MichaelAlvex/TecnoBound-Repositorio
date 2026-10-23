@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"sComp_casa",
-    "path":"folders/sComp_casa.yy",
+    "path":"folders/Sprites/sComp_casa.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"processador",
-    "path":"folders/processador.yy",
+    "path":"folders/Sprites/processador.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

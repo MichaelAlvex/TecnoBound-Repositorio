@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"sComp_escritorio",
-    "path":"folders/sComp_escritorio.yy",
+    "path":"folders/Sprites/sComp_escritorio.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

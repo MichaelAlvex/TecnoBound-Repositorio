@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"sComp_gamer",
-    "path":"folders/sComp_gamer.yy",
+    "path":"folders/Sprites/sComp_gamer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
