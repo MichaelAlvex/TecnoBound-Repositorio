@@ -11,25 +11,46 @@ if (point_in_rectangle(
 )) {
     if (mouse_check_button_pressed(mb_left)) {
 
-        switch (global.perifericoEscolhido) {
+        if (global.faseAtual == 1) {
 
-            case 0:
-                room_goto(rMontagemMouse);
-                break;
+            switch (global.perifericoEscolhido) {
+                case 0:
+                    room_goto(rMontagemMouse);
+                    break;
 
-            case 1:
-                room_goto(rMontagemTeclado);
-                break;
+                case 1:
+                    room_goto(rMontagemTeclado);
+                    break;
 
-            case 2:
-                room_goto(rMontagemMonitor);
-                break;
+                case 2:
+                    room_goto(rMontagemMonitor);
+                    break;
 
-            default:
-                show_debug_message(
-                    "ERRO: nenhum periferico valido foi escolhido."
-                );
-                break;
+                default:
+                    show_debug_message(
+                        "ERRO: nenhum periferico valido foi escolhido."
+                    );
+                    break;
+            }
+
+        } else if (global.faseAtual == 2) {
+
+            switch (global.componenteEscolhido) {
+                case 0:
+                    room_goto(MontagemPMae);
+                    break;
+
+                case 1:
+                    room_goto(MontagemPVideo);
+                    break;
+
+                default:
+                    show_debug_message(
+                        "ERRO: nenhum componente valido foi escolhido."
+                    );
+                    break;
+            }
+
         }
     }
 }

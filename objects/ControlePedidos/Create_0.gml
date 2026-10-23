@@ -1,18 +1,19 @@
 
 persistent = true;
 
-// Sorteia o pedido inicial
-pedidoAtual = irandom(2);
-global.pedidoAtual = pedidoAtual;
+// Inicializa a fase apenas se ainda não existir
+if (!variable_global_exists("faseAtual")) {
+    global.faseAtual = 1;
+}
 
-// Textos dos pedidos
+// Pedidos da primeira fase
 pedidos = [
     "Olá! Gostaria de encomendar um mouse.",
     "Olá! Gostaria de encomendar um teclado.",
     "Olá! Gostaria de encomendar um monitor."
 ];
 
-// Inicializa os dados do pedido apenas na primeira vez
+// Inicializa as variáveis globais
 if (!variable_global_exists("pedidoAtivo")) {
     global.pedidoAtivo = false;
 }
@@ -28,6 +29,18 @@ if (!variable_global_exists("pedidoTexto")) {
 if (!variable_global_exists("perifericoEscolhido")) {
     global.perifericoEscolhido = -1;
 }
+
 if (!variable_global_exists("segundaFaseDesbloqueada")) {
     global.segundaFaseDesbloqueada = false;
 }
+
+if (!variable_global_exists("faseDesbloqueadaMensagem")) {
+    global.faseDesbloqueadaMensagem = 0;
+}
+
+// Sorteia somente um pedido da primeira fase
+pedidoAtual = irandom(2);
+
+global.pedidoAtual = pedidoAtual;
+faseDoPedido = 1;
+show_debug_message("ControlePedidosFase2: Create executado");

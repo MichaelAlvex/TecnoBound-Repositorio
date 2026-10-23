@@ -1,9 +1,23 @@
-if (room == Envio) {
+if (
+    room == Envio
+    || room == MontagemPMae
+    || room == MontagemPVideo
+) {
     visible = false;
 } else {
     visible = true;
 }
-if (room != Menu && room != Conclusao && room != Envio && room != Pedidos && room != rMontagemMonitor && room != rMontagemMouse && room != rMontagemTeclado && room != rOficina){
+if (room != Menu 
+&& room != Conclusao 
+&& room != Envio 
+&& room != Pedidos 
+&& room != rMontagemMonitor 
+&& room != rMontagemMouse 
+&& room != rMontagemTeclado 
+&& room != rOficina
+&& room != MontagemPMae
+&& room != MontagemPVideo
+){
 
 	x = room_width / 2;
 	y = room_height / 2;
