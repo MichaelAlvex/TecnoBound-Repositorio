@@ -1,0 +1,1 @@
+tempoMensagem = 180;
