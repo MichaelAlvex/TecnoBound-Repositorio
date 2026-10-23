@@ -1,4 +1,4 @@
-if (instance_exists(oSalas_Sem_Player)) {
+if (room == Envio || instance_exists(oSalas_Sem_Player)) {
     visible = false;
 } else {
     visible = true;

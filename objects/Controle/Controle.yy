@@ -8,8 +8,8 @@
   "name":"Controle",
   "overriddenProperties":[],
   "parent":{
-    "name":"1fase",
-    "path":"folders/Objetos/Montagem_de_Pecas/1fase.yy",
+    "name":"Mouse",
+    "path":"folders/Objetos/Montagem_de_Pecas/1fase/Mouse.yy",
   },
   "parentObjectId":null,
   "persistent":false,

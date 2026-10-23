@@ -28,3 +28,6 @@ if (!variable_global_exists("pedidoTexto")) {
 if (!variable_global_exists("perifericoEscolhido")) {
     global.perifericoEscolhido = -1;
 }
+if (!variable_global_exists("segundaFaseDesbloqueada")) {
+    global.segundaFaseDesbloqueada = false;
+}

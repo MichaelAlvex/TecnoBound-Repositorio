@@ -1,4 +1,9 @@
-if (room != Menu && room != Conclusao && room != Pedidos && room != rMontagemMonitor && room != rMontagemMouse && room != rMontagemTeclado && room != rOficina){
+if (room == Envio) {
+    visible = false;
+} else {
+    visible = true;
+}
+if (room != Menu && room != Conclusao && room != Envio && room != Pedidos && room != rMontagemMonitor && room != rMontagemMouse && room != rMontagemTeclado && room != rOficina){
 
 	x = room_width / 2;
 	y = room_height / 2;
