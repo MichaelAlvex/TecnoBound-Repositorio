@@ -8,8 +8,8 @@
   "name":"ControlePV",
   "overriddenProperties":[],
   "parent":{
-    "name":"PlacaVideo",
-    "path":"folders/Objetos/Montagem_de_Pecas/2fase/PlacaVideo.yy",
+    "name":"PlacadeVideo",
+    "path":"folders/Objetos/Montagem_de_Pecas/2fase/PlacadeVideo.yy",
   },
   "parentObjectId":null,
   "persistent":false,

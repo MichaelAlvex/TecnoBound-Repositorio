@@ -2,6 +2,7 @@ if (
     room == Envio
     || room == MontagemPMae
     || room == MontagemPVideo
+	|| room == MontagemProcessador
 ) {
     visible = false;
 } else {
@@ -17,6 +18,7 @@ if (room != Menu
 && room != rOficina
 && room != MontagemPMae
 && room != MontagemPVideo
+&& room != MontagemProcessador
 ){
 
 	x = room_width / 2;
