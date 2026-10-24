@@ -26,6 +26,9 @@ if (global.faseAtual == 1) {
         case 1:
             room_goto(MontagemPVideo);
             break;
+		case 2:
+            room_goto(MontagemProcessador);
+            break;
     }
 
 }
