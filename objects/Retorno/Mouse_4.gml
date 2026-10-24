@@ -1,3 +1,4 @@
+
 if (global.faseAtual == 1) {
 
     // Voltar para o periférico da primeira fase
@@ -26,9 +27,26 @@ if (global.faseAtual == 1) {
         case 1:
             room_goto(MontagemPVideo);
             break;
-		case 2:
+
+        case 2:
             room_goto(MontagemProcessador);
             break;
     }
 
+} else if (global.faseAtual == 3) {
+
+    // Voltar para o computador da terceira fase
+    switch (global.computadorEscolhido) {
+        case 0:
+            room_goto(MontagemGamer);
+            break;
+
+        case 1:
+            room_goto(MontagemCasa);
+            break;
+
+        case 2:
+            room_goto(MontagemEscritorio);
+            break;
+    }
 }
