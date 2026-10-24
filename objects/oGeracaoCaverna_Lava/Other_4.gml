@@ -5,7 +5,7 @@ var _Largura_Grade = room_width / _Tamanho_Tile;
 var _Altura_Grade = room_height / _Tamanho_Tile;
 
 var _Grade = ds_grid_create(_Largura_Grade, _Altura_Grade);
-var _Chance_Parede = 40;
+var _Chance_Parede = 43;
 
 for (var _x = 0; _x < _Largura_Grade; _x++){
 	for (var _y = 0;_y < _Altura_Grade;_y++){
@@ -17,7 +17,7 @@ for (var _x = 0; _x < _Largura_Grade; _x++){
 	}
 }
 
-var _Refinamentos = 6;
+var _Refinamentos = 4;
 var _Grade_Temp = ds_grid_create(_Largura_Grade, _Altura_Grade);
 
 repeat (_Refinamentos){
