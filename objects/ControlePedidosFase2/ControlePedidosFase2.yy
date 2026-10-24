@@ -9,8 +9,8 @@
   "name":"ControlePedidosFase2",
   "overriddenProperties":[],
   "parent":{
-    "name":"1fase",
-    "path":"folders/Objetos/Montagem_de_Pecas/1fase.yy",
+    "name":"2fase",
+    "path":"folders/Objetos/Montagem_de_Pecas/2fase.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -359,7 +359,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"MontagemProcessador","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Pedidos","path":"rooms/Pedidos/Pedidos.yy",},},
     {"roomId":{"name":"Room_0","path":"rooms/Room_0/Room_0.yy",},},
@@ -370,6 +369,7 @@
     {"roomId":{"name":"rMontagemMouse","path":"rooms/rMontagemMouse/rMontagemMouse.yy",},},
     {"roomId":{"name":"rMontagemTeclado","path":"rooms/rMontagemTeclado/rMontagemTeclado.yy",},},
     {"roomId":{"name":"MontagemPMae","path":"rooms/MontagemPMae/MontagemPMae.yy",},},
+    {"roomId":{"name":"MontagemProcessador","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},},
     {"roomId":{"name":"MontagemPVideo","path":"rooms/MontagemPVideo/MontagemPVideo.yy",},},
     {"roomId":{"name":"Envio","path":"rooms/Envio/Envio.yy",},},
     {"roomId":{"name":"Conclusao","path":"rooms/Conclusao/Conclusao.yy",},},

@@ -43,7 +43,9 @@ if (point_in_rectangle(
                 case 1:
                     room_goto(MontagemPVideo);
                     break;
-
+				case 2:
+					room_goto(MontagemProcessador);
+					break;
                 default:
                     show_debug_message(
                         "ERRO: nenhum componente valido foi escolhido."
