@@ -39,6 +39,10 @@
     {"$GMFolder":"","%Name":"Pedras","folderPath":"folders/Sprites/Pedras.yy","name":"Pedras","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites_Tiles","folderPath":"folders/Sprites/Sprites_Tiles.yy","name":"Sprites_Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sComp_casa","folderPath":"folders/Sprites/sComp_casa.yy","name":"sComp_casa","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sComp_gamer","folderPath":"folders/Sprites/sComp_gamer.yy","name":"sComp_gamer","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sComp_escritorio","folderPath":"folders/Sprites/sComp_escritorio.yy","name":"sComp_escritorio","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"processador","folderPath":"folders/Sprites/processador.yy","name":"processador","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -218,8 +222,6 @@
     {"id":{"name":"Sprite113","path":"sprites/Sprite113/Sprite113.yy",},},
     {"id":{"name":"Sprite115","path":"sprites/Sprite115/Sprite115.yy",},},
     {"id":{"name":"Sprite116","path":"sprites/Sprite116/Sprite116.yy",},},
-<<<<<<< HEAD
-=======
     {"id":{"name":"Sprite117_1","path":"sprites/Sprite117_1/Sprite117_1.yy",},},
     {"id":{"name":"Sprite117","path":"sprites/Sprite117/Sprite117.yy",},},
     {"id":{"name":"Sprite118","path":"sprites/Sprite118/Sprite118.yy",},},
@@ -289,7 +291,6 @@
     {"id":{"name":"Sprite185","path":"sprites/Sprite185/Sprite185.yy",},},
     {"id":{"name":"Sprite186","path":"sprites/Sprite186/Sprite186.yy",},},
     {"id":{"name":"Sprite187","path":"sprites/Sprite187/Sprite187.yy",},},
->>>>>>> f341bf2e8ceca83c1cb0addb2e886c03810158f2
     {"id":{"name":"Sprite66","path":"sprites/Sprite66/Sprite66.yy",},},
     {"id":{"name":"Sprite67","path":"sprites/Sprite67/Sprite67.yy",},},
     {"id":{"name":"Sprite68","path":"sprites/Sprite68/Sprite68.yy",},},
@@ -318,7 +319,6 @@
     {"id":{"name":"Sprite93","path":"sprites/Sprite93/Sprite93.yy",},},
     {"id":{"name":"Sprite94","path":"sprites/Sprite94/Sprite94.yy",},},
     {"id":{"name":"Sprite95","path":"sprites/Sprite95/Sprite95.yy",},},
-    {"id":{"name":"Sprite96","path":"sprites/Sprite96/Sprite96.yy",},},
     {"id":{"name":"Sprite97","path":"sprites/Sprite97/Sprite97.yy",},},
     {"id":{"name":"Sprite98","path":"sprites/Sprite98/Sprite98.yy",},},
     {"id":{"name":"Sprite99","path":"sprites/Sprite99/Sprite99.yy",},},
