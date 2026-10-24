@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 # Ignore .yy files for language statistics
 *.yy linguist-generated=true
- 
+
 # force LF for metadata files for merge simplicity
 *.gml text eol=lf
 *.yy text eol=lf
 *.yyp text eol=lf
 *.json text eol=lf
-=======
-# Auto detect text files and perform LF normalization
-* text=auto
->>>>>>> 48e3aa06cc56c2cdd06e761e0d0b28fb8e1e940e
