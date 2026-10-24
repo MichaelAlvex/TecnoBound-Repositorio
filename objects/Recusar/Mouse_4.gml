@@ -24,3 +24,16 @@ else if (global.faseAtual == 2) {
         global.pedidoAtual = pedidoAtual;
     }
 }
+else if (global.faseAtual == 3) {
+    with (ControlePedidosFase3) {
+        var limitePedido = 2;
+        var novoPedido = irandom(limitePedido);
+
+        while (novoPedido == pedidoAtual) {
+            novoPedido = irandom(limitePedido);
+        }
+
+        pedidoAtual = novoPedido;
+        global.pedidoAtual = pedidoAtual;
+    }
+}

@@ -24,3 +24,5 @@ if (global.faseDesbloqueadaMensagem > 0) {
 
     global.faseDesbloqueadaMensagem = 0;
 }
+
+

@@ -3,6 +3,9 @@ if (
     || room == MontagemPMae
     || room == MontagemPVideo
 	|| room == MontagemProcessador
+	|| room == MontagemCasa
+    || room == MontagemEscritorio
+    || room == MontagemGamer
 ) {
     visible = false;
 } else {
@@ -19,6 +22,9 @@ if (room != Menu
 && room != MontagemPMae
 && room != MontagemPVideo
 && room != MontagemProcessador
+&& room != MontagemCasa
+&& room != MontagemEscritorio
+&& room != MontagemGamer
 ){
 
 	x = room_width / 2;

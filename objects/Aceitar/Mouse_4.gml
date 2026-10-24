@@ -1,3 +1,4 @@
+
 if (global.faseAtual == 1) {
     with (ControlePedidos) {
         global.pedidoAceito = pedidoAtual;
@@ -14,6 +15,15 @@ else if (global.faseAtual == 2) {
         global.componenteEscolhido = pedidoAtual;
     }
 }
+else if (global.faseAtual == 3) {
+    with (ControlePedidosFase3) {
+        global.pedidoAceito = pedidoAtual;
+        global.pedidoAtivo = true;
+        global.pedidoTexto = pedidos[pedidoAtual];
+        global.computadorEscolhido = pedidoAtual;
+    }
+}
 
 room_goto(Room_0);
+
 
