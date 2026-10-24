@@ -446,11 +446,11 @@
     {"roomId":{"name":"MontagemPMae","path":"rooms/MontagemPMae/MontagemPMae.yy",},},
     {"roomId":{"name":"MontagemPVideo","path":"rooms/MontagemPVideo/MontagemPVideo.yy",},},
     {"roomId":{"name":"MontagemProcessador","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},},
-    {"roomId":{"name":"Envio","path":"rooms/Envio/Envio.yy",},},
-    {"roomId":{"name":"Conclusao","path":"rooms/Conclusao/Conclusao.yy",},},
     {"roomId":{"name":"MontagemCasa","path":"rooms/MontagemCasa/MontagemCasa.yy",},},
     {"roomId":{"name":"MontagemEscritorio","path":"rooms/MontagemEscritorio/MontagemEscritorio.yy",},},
     {"roomId":{"name":"MontagemGamer","path":"rooms/MontagemGamer/MontagemGamer.yy",},},
+    {"roomId":{"name":"Envio","path":"rooms/Envio/Envio.yy",},},
+    {"roomId":{"name":"Conclusao","path":"rooms/Conclusao/Conclusao.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

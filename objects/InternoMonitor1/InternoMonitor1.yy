@@ -10,8 +10,8 @@
   "name":"InternoMonitor1",
   "overriddenProperties":[],
   "parent":{
-    "name":"PCcasa",
-    "path":"folders/Objetos/Montagem_de_Pecas/3fase/PCcasa.yy",
+    "name":"3fase",
+    "path":"folders/Objetos/Montagem_de_Pecas/3fase.yy",
   },
   "parentObjectId":null,
   "persistent":false,
