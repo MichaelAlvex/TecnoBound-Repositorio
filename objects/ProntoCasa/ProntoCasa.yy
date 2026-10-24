@@ -6,8 +6,8 @@
   "name":"ProntoCasa",
   "overriddenProperties":[],
   "parent":{
-    "name":"3fase",
-    "path":"folders/Objetos/Montagem_de_Pecas/3fase.yy",
+    "name":"PCcasa",
+    "path":"folders/Objetos/Montagem_de_Pecas/3fase/PCcasa.yy",
   },
   "parentObjectId":null,
   "persistent":false,
