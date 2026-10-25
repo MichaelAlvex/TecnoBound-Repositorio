@@ -183,11 +183,11 @@ for (var _x = 0; _x < _Largura_Grade; _x++){
 	}
 }
 
-var _qntPedras = irandom_range(5, 10);
-var _NumPedras = 0;
-var _Tentativas = 0;
+var _qntPedras_Quartzo = 9;
+var _NumPedras_Quartzo = 0;
+var _Tentativas_Quartzo = 0;
 
-while (_NumPedras < _qntPedras && _Tentativas < 1000){
+while (_NumPedras_Quartzo < _qntPedras_Quartzo && _Tentativas_Quartzo < 1000){
 	
 	var _x_Grade = irandom_range(1, _Largura_Grade - 2);
 	var _y_Grade = irandom_range(1, _Altura_Grade - 2);
@@ -197,20 +197,36 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 		var _x_Pedra = _x_Grade * _Tamanho_Tile;
 		var _y_Pedra = _y_Grade * _Tamanho_Tile;
 
-		var _Chance_Minerio = random(100);
-		var _Tipo_Pedra = oPedra_Quartzo;
-		
-		if (_Chance_Minerio <= 30){
-			_Tipo_Pedra = oPedra_Grafite;
-		}
-		
-		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", _Tipo_Pedra);
+		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", oPedra_Quartzo);
 		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", oParede_Invisivel);
 		
 		_Grade [# _x_Grade, _y_Grade] = 2;
-		_NumPedras++;
+		_NumPedras_Quartzo++;
 	}
-	_Tentativas++;
+	_Tentativas_Quartzo++;
+	}
+	
+var _qntPedras_Grafite = 5;
+var _NumPedras_Grafite = 0;
+var _Tentativas_Grafite = 0;
+
+while (_NumPedras_Grafite < _qntPedras_Grafite && _Tentativas_Grafite < 1000){
+	
+	var _x_Grade = irandom_range(1, _Largura_Grade - 2);
+	var _y_Grade = irandom_range(1, _Altura_Grade - 2);
+	
+	if (_Grade[# _x_Grade, _y_Grade] == 0){
+		
+		var _x_Pedra = _x_Grade * _Tamanho_Tile;
+		var _y_Pedra = _y_Grade * _Tamanho_Tile;
+
+		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", oPedra_Grafite);
+		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", oParede_Invisivel);
+		
+		_Grade [# _x_Grade, _y_Grade] = 2;
+		_NumPedras_Grafite++;
+	}
+	_Tentativas_Grafite++;
 	}
 	
 	

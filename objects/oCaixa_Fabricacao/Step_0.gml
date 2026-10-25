@@ -26,6 +26,7 @@ for (var _i = 0; _i < Tamanho_Caixa; _i++) {
     }
 }
 
+if (global.faseAtual == 1) {
 if (global.perifericoEscolhido != -1 && struct_exists(oCaixa_Receitas.receitas, global.perifericoEscolhido)) {
     var _ingredientes_necessarios = oCaixa_Receitas.receitas[$ global.perifericoEscolhido];
     var _todos_presentes = true;
@@ -48,4 +49,53 @@ if (global.perifericoEscolhido != -1 && struct_exists(oCaixa_Receitas.receitas, 
     }
     
     global.podeFabricar = _todos_presentes;
+}
+} else if (global.faseAtual == 2) {
+	if (global.componenteEscolhido != -1 && struct_exists(oCaixa_Receitas.receitas, global.componenteEscolhido)) {
+    var _ingredientes_necessarios = oCaixa_Receitas.receitas[$ global.componenteEscolhido];
+    var _todos_presentes = true;
+    
+    for (var i = 0; i < array_length(_ingredientes_necessarios); i++) {
+        var _req = _ingredientes_necessarios[i];
+        var _quantidade_encontrada = 0;
+        
+        for (var j = 0; j < Tamanho_Caixa; j++) {
+            var _slot_atual = Slots_Caixa[j];
+            if (_slot_atual != noone && _slot_atual.nome == _req.nome) {
+                _quantidade_encontrada += _slot_atual.quantidade;
+            }
+        }
+        
+        if (_quantidade_encontrada < _req.quantidade) {
+            _todos_presentes = false;
+            break;
+        }
+    }
+	
+    global.podeFabricar = _todos_presentes;
+}
+} else if (global.faseAtual == 3) {
+	if (global.computadorEscolhido != -1 && struct_exists(oCaixa_Receitas.receitas, global.computadorEscolhido)) {
+    var _ingredientes_necessarios = oCaixa_Receitas.receitas[$ global.computadorEscolhido];
+    var _todos_presentes = true;
+    
+    for (var i = 0; i < array_length(_ingredientes_necessarios); i++) {
+        var _req = _ingredientes_necessarios[i];
+        var _quantidade_encontrada = 0;
+        
+        for (var j = 0; j < Tamanho_Caixa; j++) {
+            var _slot_atual = Slots_Caixa[j];
+            if (_slot_atual != noone && _slot_atual.nome == _req.nome) {
+                _quantidade_encontrada += _slot_atual.quantidade;
+            }
+        }
+        
+        if (_quantidade_encontrada < _req.quantidade) {
+            _todos_presentes = false;
+            break;
+        }
+    }
+    
+    global.podeFabricar = _todos_presentes;
+	}
 }

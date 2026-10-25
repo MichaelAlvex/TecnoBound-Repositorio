@@ -14,7 +14,7 @@ for (var _i = 0; _i < Tamanho_Caixa; _i++) {
     var _centro_x = _xx + _Centro_Slot;
     var _centro_y = _yy + _Centro_Slot;
     
-    draw_sprite(sSlot, 0, _centro_x, _centro_y);
+    draw_sprite(sSlot_Fabricacao, 0, _centro_x, _centro_y);
     
     if (Slots_Caixa[_i] != noone) {
         var _Item = Slots_Caixa[_i];
