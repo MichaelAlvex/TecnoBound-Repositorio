@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oPedra_Aluminio",
+  "%Name":"oCaixa_Receitas",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPedra_Aluminio",
+  "name":"oCaixa_Receitas",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pedras",
-    "path":"folders/Objetos/Pedras.yy",
+    "name":"Oficina",
+    "path":"folders/Objetos/Oficina.yy",
   },
-  "parentObjectId":{
-    "name":"oPedra_Mae",
-    "path":"objects/oPedra_Mae/oPedra_Mae.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sPedra_Aluminio",
-    "path":"sprites/sPedra_Aluminio/sPedra_Aluminio.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

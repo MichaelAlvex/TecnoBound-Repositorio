@@ -193,7 +193,7 @@ while (_NumPedras < _qntPedras && _Tentativas < 1000){
 		var _Tipo_Pedra = oPedra_Cobre;
 		
 		if (_Chance_Minerio <= 15){
-			_Tipo_Pedra = oPedra_Aluminio;
+			_Tipo_Pedra = oPedra_Bauxita;
 		}
 		
 		instance_create_layer(_x_Pedra, _y_Pedra, "Instances", _Tipo_Pedra);

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPedra_Aluminio",
-    "path":"sprites/sPedra_Aluminio/sPedra_Aluminio.yy",
+    "name":"sPedra_Bauxita",
+    "path":"sprites/sPedra_Bauxita/sPedra_Bauxita.yy",
   },
   "spriteMaskId":null,
   "visible":true,

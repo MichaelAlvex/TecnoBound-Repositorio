@@ -1,4 +1,4 @@
-objeto_drop = oAluminio
+objeto_drop = oGrafite;
 Tempo_Quebra = 90;
 Tempo_Maximo = Tempo_Quebra;
 X_Inicial = x;
