@@ -1,0 +1,50 @@
+Projeto: TecnoBound.yyp | 370 recursos | 42 pastas
+
+=== 44 PROBLEMA(S) ENCONTRADO(S) ===
+[PARENT INEXISTENTE] fonts/Font1/Font1.yy -> TecnoBound.yyp
+[ARQUIVO FALTANDO] objects/oAluminio/oAluminio.yy
+[PARENT INEXISTENTE] sprites/Sprite212/Sprite212.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite213/Sprite213.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite214/Sprite214.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite215/Sprite215.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite216/Sprite216.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite217/Sprite217.yy -> TecnoBound.yyp
+[PARENT INEXISTENTE] sprites/Sprite218/Sprite218.yy -> TecnoBound.yyp
+[PNG FALTANDO] sprites/aceitar/aceitar.yy: 689bb25e-12b2-47c3-9a4c-d435865a7ab8.png
+[PNG FALTANDO] sprites/computador/computador.yy: 44b5561c-a038-4f16-8e28-3fe059707ecb.png
+[PNG FALTANDO] sprites/menu/menu.yy: ec214c88-0379-4c7a-8ace-5fcc09f7ef0c.png
+[PNG FALTANDO] sprites/pagar/pagar.yy: c0931303-de43-4827-9118-1743c52212fe.png
+[PNG FALTANDO] sprites/pegar/pegar.yy: 8c395f53-0a81-4c3f-b193-3329eba6579f.png
+[PNG FALTANDO] sprites/play/play.yy: 0b041ffe-82c0-4163-9f32-c3cf22ac81ce.png
+[PNG FALTANDO] sprites/recusar/recusar.yy: e7103797-98e3-4aae-9f8f-9c964338ae54.png
+[PNG FALTANDO] sprites/s_mouse1/s_mouse1.yy: ea6435b7-62f6-4d13-a1ed-98bdc57fb4f2.png
+[PNG FALTANDO] sprites/s_mouse10/s_mouse10.yy: 4adf1ca2-ccae-402e-8354-eea1c85ef0ed.png
+[PNG FALTANDO] sprites/s_mouse2/s_mouse2.yy: 6b7659b2-e709-475e-b2d1-c6127b0af829.png
+[PNG FALTANDO] sprites/s_mouse3/s_mouse3.yy: 8075679a-4544-4921-9d5d-17e6ac1f6bb5.png
+[PNG FALTANDO] sprites/s_mouse4/s_mouse4.yy: 9df3d026-5a6f-4898-a860-3db50895efee.png
+[PNG FALTANDO] sprites/s_mouse5/s_mouse5.yy: 1ebf2940-4a81-4cba-b65b-53a3d8f1136a.png
+[PNG FALTANDO] sprites/s_mouse6/s_mouse6.yy: a108028b-a9d5-409b-a6e9-7c90dd82349f.png
+[PNG FALTANDO] sprites/s_mouse7/s_mouse7.yy: a108028b-a9d5-409b-a6e9-7c90dd82349f.png
+[PNG FALTANDO] sprites/s_mouse8/s_mouse8.yy: 4dda0ae2-d86f-4990-a955-2e98d2098761.png
+[PNG FALTANDO] sprites/s_mouse9/s_mouse9.yy: cdda459c-75bb-4491-b917-6a89689a33fd.png
+[PNG FALTANDO] sprites/s_placamae1/s_placamae1.yy: e42531ed-280b-4326-992c-47500448474c.png
+[PNG FALTANDO] sprites/s_placamae2/s_placamae2.yy: 720c0bfd-eb70-47f6-9cbf-0c59f6e824ad.png
+[PNG FALTANDO] sprites/s_placamae3/s_placamae3.yy: 8acf9d5a-3be4-4c22-b112-a0edd0f05f51.png
+[PNG FALTANDO] sprites/s_placamae4/s_placamae4.yy: 2b0383c6-4350-4424-b3d7-fe55347618e5.png
+[PNG FALTANDO] sprites/s_placamae5/s_placamae5.yy: 9afc4f16-e16d-4d7d-8ca5-816e174d741a.png
+[PNG FALTANDO] sprites/s_placamae6/s_placamae6.yy: c9650644-8600-422b-a760-41c31ef30fd1.png
+[PNG FALTANDO] sprites/s_placamae7/s_placamae7.yy: e0bdf67a-c2e0-4da1-b2be-7295694ed0b7.png
+[PNG FALTANDO] sprites/s_placamae8/s_placamae8.yy: d0dbb9c0-c552-4b9e-8a64-243f1f95f11a.png
+[PNG FALTANDO] sprites/s_placavdo/s_placavdo.yy: 26a441e4-9c60-49c4-a990-03799371f9f2.png
+[PNG FALTANDO] sprites/s_placavdo1/s_placavdo1.yy: 257c846a-b7c8-4a14-8531-cf78e759b290.png
+[PNG FALTANDO] sprites/s_placavdo2/s_placavdo2.yy: af02ebc2-e5eb-409e-9e94-74b210dcb8e2.png
+[PNG FALTANDO] sprites/s_placavdo3/s_placavdo3.yy: 0ffc991f-eeb5-46a0-b68b-362ebe502f9c.png
+[PNG FALTANDO] sprites/s_placavdo4/s_placavdo4.yy: b6fbca95-7995-4e44-9e53-8b104e75eb6d.png
+[PNG FALTANDO] sprites/s_placavdo5/s_placavdo5.yy: fc137fec-3d6d-46b1-85d8-fe225ffa1f0d.png
+[PNG FALTANDO] sprites/s_placavdo6/s_placavdo6.yy: 28dac3d6-e7c4-4886-9bc2-8d1faf01dc7f.png
+[PNG FALTANDO] sprites/saida/saida.yy: ebc8a738-ac99-44aa-bae4-4bb34fdff753.png
+[PNG FALTANDO] sprites/teclado/teclado.yy: 3e8f9257-9d13-4a46-a781-09a0c569c001.png
+[PNG FALTANDO] sprites/teclado_1/teclado_1.yy: 1eb342a2-6e3e-445d-8547-6167c7cc8ab6.png
+
+Resultado salvo em: resultado_diagnostico.txt
+Aperte Enter para fechar...
