@@ -11,3 +11,5 @@ else if (global.faseAtual == 2) {
 else if (global.faseAtual == 3) {
     room_goto(Conclusao);
 }
+
+global.stat_pedidos += 1;

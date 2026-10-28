@@ -198,35 +198,59 @@ if (Cooldown_Ataque > 0){
 switch (Estado){
 
 	case "Livre":
+	
 		if (oInventario.Slot_Selecionado == 0 && mouse_check_button(mb_left)){
-			var _Monstro = noone;
+    var _Monstro = noone;
 
-			with (oMonstro_Mae){
-				if (point_distance(mouse_x, mouse_y, x, y) <= 32){
-					_Monstro = id;
-					break;
-				}
-			}
+    with (oMonstro_Mae){
+        if (point_distance(mouse_x, mouse_y, x, y) <= 32){
+            _Monstro = id;
+            break;
+        }
+    }
 
-			if (_Monstro != noone){
-				var _Distancia = point_distance(x, y, _Monstro.x, _Monstro.y);
+    if (_Monstro != noone){
+        var _Distancia = point_distance(x, y, _Monstro.x, _Monstro.y);
 
-				if (_Distancia <= 44){
+        if (_Distancia <= 44){
 
-					if (Cooldown_Ataque <= 0){
-						_Monstro.HP_Monstro -= 50;
-						_Monstro.Monstro_Tremer_Timer = 10;
-						Cooldown_Ataque = 12;
+            if (Cooldown_Ataque <= 0){
+                _Monstro.HP_Monstro -= 50;
+                _Monstro.Monstro_Tremer_Timer = 10;
+                Cooldown_Ataque = 12;
 
-						if (_Monstro.HP_Monstro <= 0){
-							with (_Monstro){
-								instance_destroy();
-							}
-						}
-					}
-				}
-			}
-		}
+                if (_Monstro.HP_Monstro <= 0){
+                    
+                    if (variable_global_exists("monstros_derrotados")) {
+                        var _tipo = _Monstro.tipo_monstro;
+                        
+                        if (struct_exists(global.monstros_derrotados, _tipo)) {
+                            global.monstros_derrotados[$ _tipo] += 1;
+                        }
+                    }
+                    
+                    with (_Monstro){
+                        instance_destroy();
+                    }
+                }
+            }
+        }
+    }
+}
 	break;
 }
+}
+
+var _movendo = (abs(VelH) > 0.1 || abs(VelV) > 0.1 ); 
+
+if (_movendo) {
+    contador_movimento ++;
+
+    if (contador_movimento >= intervalo_passo) {
+        global.stat_passos += 1; 
+        contador_movimento = 0;
+
+    }
+} else {
+    contador_movimento = 0; 
 }

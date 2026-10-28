@@ -8,3 +8,4 @@ Tempo_Entre_Tiros = 180;
 tremer_timer = 0;     
 tremer_potencia = 3;
 Monstro_Tremer_Timer = 0;
+tipo_monstro = "Aranha";

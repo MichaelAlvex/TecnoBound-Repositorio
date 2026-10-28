@@ -6,9 +6,10 @@ Tamanho_Inventario = Tamanho_HotBar + (Linhas * Colunas);
 Inventario = array_create(Tamanho_Inventario, noone);
 Distancia = 20;
 Tamanho_Slot = 20;
-Inventario[0] = {nome: "Broca", sprite: sBroca_Inventario, quantidade: 1, descricao: "Item"};
+Inventario[0] = {nome: "Broca", sprite: sBroca_Inventario_Antiga, quantidade: 1, descricao: "Item"};
 Item_Segurado = noone; 
 Slot_Selecionado = 0;
+depth = -1000;
 
 function Pegar_Posicao_Slot(_indice) {
     var _xx, _yy;

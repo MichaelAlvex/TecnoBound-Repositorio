@@ -1,5 +1,3 @@
-//menu com opções para jogar, opções, créditos, sair
-
 var _cima = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 var _baixo = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
 var _enter = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);

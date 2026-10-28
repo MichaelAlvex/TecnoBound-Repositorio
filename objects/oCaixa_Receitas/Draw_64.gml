@@ -1,3 +1,7 @@
+if (room != rOficina) {
+    exit; 
+}
+
 draw_set_font(-1);
 draw_set_font(Font1);
 

@@ -8,3 +8,4 @@ Amplitude_Onda = 90;
 tremer_timer = 0;     
 tremer_potencia = 3;
 Monstro_Tremer_Timer = 0;
+tipo_monstro = "Morcego";
