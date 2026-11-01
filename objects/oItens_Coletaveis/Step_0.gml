@@ -21,8 +21,8 @@ if (z == 0 && distance_to_object(oPlayer) <= 10){
 		
 		var _Slot = oInventario.Inventario[i];
 		
-		if (_Slot != noone && _Slot.nome = Nome){
-			_Slot.quantidade += Quantidade;
+		if (_Slot != noone && _Slot.nome = nome){
+			_Slot.quantidade += quantidade;
 			_Coletado = true;
 			break;
 		}
@@ -34,10 +34,10 @@ if (z == 0 && distance_to_object(oPlayer) <= 10){
 				
 				if (oInventario.Inventario[i] == noone){
 					oInventario.Inventario[i] = {
-						nome: Nome,
-						sprite: Sprite,
-						quantidade: Quantidade,
-						descricao: Descricao,
+						nome: nome,
+						sprite: sprite,
+						quantidade: quantidade,
+						descricao: descricao,
 					};
 					_Coletado = true;
 					break;

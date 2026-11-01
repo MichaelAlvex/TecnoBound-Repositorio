@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Colisao_Paredes",
+  "%Name":"scrColisao_Paredes",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Colisao_Paredes",
+  "name":"scrColisao_Paredes",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

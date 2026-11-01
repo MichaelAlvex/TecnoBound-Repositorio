@@ -1,3 +1,6 @@
+Descricao = "Uma broca confiavel";
+Quantidade = 1;
+
 if (instance_exists(oPlayer)){
 	var _px = oPlayer.x;
 	var _py = oPlayer.y;
@@ -24,3 +27,4 @@ if (instance_exists(oPlayer)){
 		depth = oPlayer.depth + 1;
 	}
 }
+

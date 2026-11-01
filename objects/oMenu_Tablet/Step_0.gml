@@ -1,3 +1,35 @@
+var _Mouse_Gui_X = device_mouse_x_to_gui(0);
+var _Mouse_Gui_Y = device_mouse_y_to_gui(0);
+
+if (is_array(global.inventario_salvo)) {
+    if (instance_exists(oInventario)) {
+        aplicar_inventario_salvo();
+        Inv_Espera = 0;
+    } else {
+        Inv_Espera++;
+
+        if (Inv_Espera > 120) {
+            global.inventario_salvo = undefined;
+            Inv_Espera = 0;
+        }
+    }
+}
+
+if (global.cfg_centralizar > 0) {
+    global.cfg_centralizar--;
+
+    if (global.cfg_centralizar == 0) {
+        window_center();
+    }
+}
+
+if (!Conf_Grupos_Prontos) {
+    if (audio_grupos_prontos()) {
+        Conf_Grupos_Prontos = true;
+        audio_aplicar_volumes();
+    }
+}
+
 if (Tablet_Aberto == false || Tela_Atual == "home") {
     if (keyboard_check_pressed(ord("E"))) {
         Tablet_Aberto = !Tablet_Aberto;
@@ -32,9 +64,6 @@ if (Tablet_Aberto == true) {
         Tela_Atual = "home"
 
     }
-
-    var _Mouse_Gui_X = device_mouse_x_to_gui(0);
-    var _Mouse_Gui_Y = device_mouse_y_to_gui(0);
 
     if (Tela_Atual == "home") {
 
@@ -141,12 +170,95 @@ if (Tablet_Aberto == true) {
                 }
             }
         }
+
+        if (Tela_Atual == "opcoes") {
+
+            var _op_w = sprite_get_width(sTablet_Fundo);
+            var _op_h = sprite_get_height(sTablet_Fundo);
+
+            if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Pos_Fundo_X, Pos_Fundo_Y, Pos_Fundo_X + _op_w, Pos_Fundo_Y + _op_h)) {
+                if (mouse_wheel_down()) {
+                    Opcoes_Scroll += 16;
+                }
+                if (mouse_wheel_up()) {
+                    Opcoes_Scroll -= 16;
+                }
+            }
+
+            if (!mouse_check_button(mb_left)) {
+                Conf_Arrastando = -1;
+                Opcoes_Barra_Arrastando = false;
+            }
+
+            if (Opcoes_Max_Scroll > 0) {
+                var _thumb_h = max(18, Opcoes_Area_H * (Opcoes_Area_H / Opcoes_Altura));
+                var _trilho = Opcoes_Area_H - _thumb_h;
+                var _thumb_y = Opcoes_Area_Y + (_trilho * (Opcoes_Scroll / Opcoes_Max_Scroll));
+
+                if (mouse_check_button_pressed(mb_left)) {
+                    if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Opcoes_Barra_X - 4, Opcoes_Area_Y, Opcoes_Barra_X + Opcoes_Barra_W + 4, Opcoes_Area_Y + Opcoes_Area_H)) {
+                        Opcoes_Barra_Arrastando = true;
+
+                        if (_Mouse_Gui_Y >= _thumb_y && _Mouse_Gui_Y <= _thumb_y + _thumb_h) {
+                            Opcoes_Barra_Offset = _Mouse_Gui_Y - _thumb_y;
+                        } else {
+                            Opcoes_Barra_Offset = _thumb_h / 2;
+                        }
+                    }
+                }
+
+                if (Opcoes_Barra_Arrastando) {
+                    Opcoes_Scroll = clamp((_Mouse_Gui_Y - Opcoes_Barra_Offset - Opcoes_Area_Y) / _trilho, 0, 1) * Opcoes_Max_Scroll;
+                }
+            }
+
+            Opcoes_Scroll = clamp(Opcoes_Scroll, 0, Opcoes_Max_Scroll);
+
+            var _na_area = !Opcoes_Barra_Arrastando && point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Opcoes_Area_X, Opcoes_Area_Y, Opcoes_Area_X + Opcoes_Area_W, Opcoes_Area_Y + Opcoes_Area_H);
+
+            if (_na_area && mouse_check_button_pressed(mb_left)) {
+                for (var i = 0; i < 4; i++) {
+                    var _sy = Conf_Vol_Y + (i * Conf_Linha) - Opcoes_Scroll;
+
+                    if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Conf_Vol_X - 4, _sy - 6, Conf_Vol_X + Conf_Vol_W + 4, _sy + 6)) {
+                        Conf_Arrastando = i;
+                    }
+                }
+            }
+
+            if (Conf_Arrastando != -1) {
+                global.volumes[Conf_Arrastando] = clamp((_Mouse_Gui_X - Conf_Vol_X) / Conf_Vol_W, 0, 1);
+                audio_aplicar_volumes();
+            }
+
+            for (var i = 0; i < array_length(global.cfg_tela_opcoes); i++) {
+                var _by = Conf_Tela_Y + (i * Conf_Linha) - Opcoes_Scroll;
+
+                if (_na_area && point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Conf_Tela_X, _by, Conf_Tela_X + Conf_Tela_W, _by + Conf_Tela_H)) {
+                    if (mouse_check_button_pressed(mb_left) && tela_opcao_disponivel(i) && global.cfg_tela != i) {
+                        tela_aplicar(i);
+                    }
+                }
+            }
+
+            var _btn_y = Opcoes_Btn_Y - Opcoes_Scroll;
+
+            if (_na_area && mouse_check_button_pressed(mb_left)) {
+                if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Opcoes_Btn_Salvar_X, _btn_y, Opcoes_Btn_Salvar_X + Opcoes_Btn_W, _btn_y + Opcoes_Btn_H)) {
+                    salvar_jogo();
+                }
+
+                if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Opcoes_Btn_Carregar_X, _btn_y, Opcoes_Btn_Carregar_X + Opcoes_Btn_W, _btn_y + Opcoes_Btn_H)) {
+                    if (carregar_jogo()) {
+                        Tablet_Aberto = false;
+                    }
+                }
+            }
+        }
     }
 }
 
 if (Tablet_Aberto && Tela_Atual == "stats") {
-    var _Mouse_Gui_X = device_mouse_x_to_gui(0);
-    var _Mouse_Gui_Y = device_mouse_y_to_gui(0);
 
     var _tablet_x = Pos_Fundo_X;
     var _tablet_y = Pos_Fundo_Y;
@@ -169,8 +281,6 @@ if (Tablet_Aberto && Tela_Atual == "stats") {
     }
 } else if (Tela_Atual == "sair") {
 
-	var _Mouse_Gui_X = device_mouse_x_to_gui(0);
-    var _Mouse_Gui_Y = device_mouse_y_to_gui(0);
     var _bm_x = Pos_Fundo_X + 78;
     var _bm_y = Pos_Fundo_Y + 55;
     var _bw1 = sprite_get_width(sBtn_MenuPrincipal);
@@ -182,7 +292,6 @@ if (Tablet_Aberto && Tela_Atual == "stats") {
             room_goto(Menu);
         }
     }
-	
 
     var _bs_x = Pos_Fundo_X + 148;
     var _bs_y = Pos_Fundo_Y + 55;
@@ -191,7 +300,8 @@ if (Tablet_Aberto && Tela_Atual == "stats") {
 
     if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, _bs_x, _bs_y, _bs_x + _bw2, _bs_y + _bh2)) {
         if (mouse_check_button_pressed(mb_left)) {
-            game_end();
+            salvar_jogo();
+			game_end();
         }
     }
 }

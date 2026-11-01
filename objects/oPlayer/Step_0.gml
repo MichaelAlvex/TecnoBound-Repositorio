@@ -10,8 +10,8 @@ if (IFrames > 0){
 	IFrames--;
 }
 
-if (HP_Player < 5){
-	HP_Player++;
+if (HP_Player <= 1){
+	HP_Player = 5;
 }
 
 if (HP_Player <= 0){

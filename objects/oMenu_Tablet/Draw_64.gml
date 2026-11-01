@@ -1,5 +1,7 @@
 if (Tablet_Aberto == true) {
 
+	var _Mouse_X = device_mouse_x_to_gui(0);
+    var _Mouse_Y = device_mouse_y_to_gui(0);
     draw_sprite(sTablet_Fundo, 0, Pos_Fundo_X, Pos_Fundo_Y);
 
     if (Tela_Atual == "home") {
@@ -120,7 +122,10 @@ if (Tablet_Aberto == true) {
             draw_set_colour(c_white);
 
             var _y_pos = -stat_scroll;
-            var _espacamento = 13;
+            var _espacamento = 13;                    // altura de uma linha de texto
+            var _esp_item = _espacamento * 2;         // distância entre itens de uma lista
+            var _esp_secao = _espacamento;            // folga antes de um novo título de seção
+            var _esp_titulo = _espacamento * 2;       // distância do título da seção até o 1º item
 
             draw_text_transformed(0, _y_pos, "=== ESTATÍSTICAS ===", 1, 1, 0);
             _y_pos += _espacamento + 4;
@@ -131,14 +136,10 @@ if (Tablet_Aberto == true) {
 
             var _andares = variable_global_exists("stat_andares") ? global.stat_andares : 0;
             draw_text_transformed(0, _y_pos, "- Andares descidos: " + string(_andares), 1, 1, 0);
-            _y_pos += _espacamento + 4;
+            _y_pos += _espacamento + 4 + _esp_secao;
 
-            draw_text_transformed(0, _y_pos, "", 0.5, 0.5, 0);
-            _y_pos += _espacamento;
             draw_text_transformed(0, _y_pos, "[ Minérios Quebrados ]", 1, 1, 0);
-            _y_pos += _espacamento;
-            draw_text_transformed(0, _y_pos, "", 0.5, 0.5, 0);
-            _y_pos += _espacamento;
+            _y_pos += _esp_titulo;
 
             var _minerios = ["Quartzo", "Grafite", "Cobre", "Bauxita", "Ouro", "Tungstênio"];
             for (var i = 0; i < array_length(_minerios); i++) {
@@ -150,22 +151,16 @@ if (Tablet_Aberto == true) {
                 }
 
                 draw_text_transformed(10, _y_pos, "- " + _m_nome + ": " + string(_m_qtd), 1, 1, 0);
-                _y_pos += _espacamento;
-                draw_text_transformed(0, _y_pos, "", 0.1, 0.1, 0);
-                _y_pos += _espacamento;
+                _y_pos += _esp_item;
             }
 
             var _total_minerios = variable_global_exists("stat_total_minerios") ? global.stat_total_minerios : 0;
             _y_pos += 2;
             draw_text_transformed(0, _y_pos, "- Totais Quebrados: " + string(_total_minerios), 1, 1, 0);
-            _y_pos += _espacamento + 4;
+            _y_pos += _espacamento + 4 + _esp_secao;
 
-            draw_text_transformed(0, _y_pos, "", 0.5, 0.5, 0);
-            _y_pos += _espacamento;
             draw_text_transformed(0, _y_pos, "[ Monstros Derrotados ]", 1, 1, 0);
-            _y_pos += _espacamento;
-            draw_text_transformed(0, _y_pos, "", 0.5, 0.5, 0);
-            _y_pos += _espacamento;
+            _y_pos += _esp_titulo;
 
             var _monstros = ["Slime", "Morcego", "Aranha", "Boss de gelo", "Boss de terra", "Boss de lava"];
             for (var i = 0; i < array_length(_monstros); i++) {
@@ -177,19 +172,14 @@ if (Tablet_Aberto == true) {
                 }
 
                 draw_text_transformed(10, _y_pos, "- " + _mon_nome + ": " + string(_mon_qtd), 1, 1, 0);
-                _y_pos += _espacamento;
-                draw_text_transformed(0, _y_pos, "", 0.1, 0.1, 0);
-                _y_pos += _espacamento;
+                _y_pos += _esp_item;
             }
 
             var _total_monstros = variable_global_exists("stat_total_monstros") ? global.stat_total_monstros : 0;
             _y_pos += 2;
             draw_text_transformed(0, _y_pos, "- Totais Derrotados: " + string(_total_monstros), 1, 1, 0);
-            _y_pos += _espacamento + 4;
-            draw_text_transformed(0, _y_pos, "", 0.1, 0.1, 0);
-            _y_pos += _espacamento;
+            _y_pos += _espacamento + 4 + _esp_secao + 2;
 
-            _y_pos += 2;
             var _pedidos = variable_global_exists("stat_pedidos") ? global.stat_pedidos : 0;
             draw_text_transformed(0, _y_pos, "- Pedidos entregues: " + string(_pedidos), 1, 1, 0);
 
@@ -218,6 +208,144 @@ if (Tablet_Aberto == true) {
             }
         }
 
+        else if (Tela_Atual == "opcoes") {
+
+            var _nomes_volume = ["Geral", "BGM", "SFX", "UI"];
+
+            draw_set_colour(c_white);
+            draw_set_font(Font1);
+            draw_set_halign(fa_left);
+            draw_set_valign(fa_top);
+
+            draw_text_transformed(Pos_Fundo_X + 15, Pos_Fundo_Y + 15, "Opções", 0.45, 0.45, 0);
+
+            var _k = max(1, window_get_width() / display_get_gui_width());
+
+            if (!surface_exists(global.opcoes_surface) || Opcoes_Surface_K != _k) {
+                if (surface_exists(global.opcoes_surface)) {
+                    surface_free(global.opcoes_surface);
+                }
+
+                global.opcoes_surface = surface_create(ceil(Opcoes_Area_W * _k), ceil(Opcoes_Area_H * _k));
+                Opcoes_Surface_K = _k;
+            }
+
+            var _ox = -Opcoes_Area_X;
+            var _oy = -(Opcoes_Area_Y + Opcoes_Scroll);
+            var _mouse_na_area = point_in_rectangle(_Mouse_X, _Mouse_Y, Opcoes_Area_X, Opcoes_Area_Y, Opcoes_Area_X + Opcoes_Area_W, Opcoes_Area_Y + Opcoes_Area_H);
+
+            surface_set_target(global.opcoes_surface);
+            draw_clear_alpha(c_black, 0);
+            matrix_set(matrix_world, matrix_build(0, 0, 0, 0, 0, 0, _k, _k, 1));
+
+            draw_set_font(Font1);
+            draw_set_colour(c_white);
+            draw_set_halign(fa_left);
+            draw_set_valign(fa_top);
+
+            draw_text_transformed(Pos_Fundo_X + 15 + _ox, Pos_Fundo_Y + 32 + _oy, "Volume", 0.45, 0.45, 0);
+            draw_text_transformed(Conf_Tela_X + _ox, Pos_Fundo_Y + 32 + _oy, "Tela", 0.45, 0.45, 0);
+
+            draw_set_valign(fa_middle);
+
+            for (var i = 0; i < 4; i++) {
+                var _sy = Conf_Vol_Y + (i * Conf_Linha) + _oy;
+                var _valor = global.volumes[i];
+                var _knob_x = Conf_Vol_X + (_valor * Conf_Vol_W) + _ox;
+                var _trilho_x = Conf_Vol_X + _ox;
+
+                draw_set_colour(c_white);
+                draw_text_transformed(Pos_Fundo_X + 15 + _ox, _sy, _nomes_volume[i], 0.45, 0.45, 0);
+
+                draw_set_colour(c_dkgrey);
+                draw_rectangle(_trilho_x, _sy - 2, _trilho_x + Conf_Vol_W, _sy + 2, false);
+
+                draw_set_colour(c_white);
+                draw_rectangle(_trilho_x, _sy - 2, _knob_x, _sy + 2, false);
+
+                if (Conf_Arrastando == i) {
+                    draw_set_colour(c_purple);
+                }
+                draw_rectangle(_knob_x - 3, _sy - 5, _knob_x + 3, _sy + 5, false);
+
+                draw_set_colour(c_white);
+                draw_text_transformed(Conf_Vol_X + Conf_Vol_W + 8 + _ox, _sy, string(round(_valor * 100)) + "%", 0.45, 0.45, 0);
+            }
+
+            draw_set_halign(fa_center);
+
+            for (var i = 0; i < array_length(global.cfg_tela_opcoes); i++) {
+                var _opcao = global.cfg_tela_opcoes[i];
+                var _by_tela = Conf_Tela_Y + (i * Conf_Linha) - Opcoes_Scroll;
+                var _by = Conf_Tela_Y + (i * Conf_Linha) + _oy;
+                var _bx = Conf_Tela_X + _ox;
+                var _disponivel = tela_opcao_disponivel(i);
+                var _selecionada = (global.cfg_tela == i);
+                var _sobre = _mouse_na_area && point_in_rectangle(_Mouse_X, _Mouse_Y, Conf_Tela_X, _by_tela, Conf_Tela_X + Conf_Tela_W, _by_tela + Conf_Tela_H);
+
+                if (_selecionada) {
+                    draw_set_colour(c_white);
+                } else if (_sobre && _disponivel) {
+                    draw_set_colour(c_gray);
+                } else {
+                    draw_set_colour(c_dkgrey);
+                }
+                draw_rectangle(_bx, _by, _bx + Conf_Tela_W, _by + Conf_Tela_H, false);
+
+                draw_set_colour(c_white);
+                draw_rectangle(_bx, _by, _bx + Conf_Tela_W, _by + Conf_Tela_H, true);
+
+                if (_selecionada) {
+                    draw_set_colour(c_black);
+                } else if (!_disponivel) {
+                    draw_set_colour(c_gray);
+                } else {
+                    draw_set_colour(c_white);
+                }
+                var _esc_opcao = min(0.45, (Conf_Tela_W - 6) / max(1, string_width(_opcao.nome)));
+                draw_text_transformed(_bx + (Conf_Tela_W / 2), _by + (Conf_Tela_H / 2), _opcao.nome, _esc_opcao, _esc_opcao, 0);
+            }
+
+            var _btn_y_tela = Opcoes_Btn_Y - Opcoes_Scroll;
+            var _btn_y = Opcoes_Btn_Y + _oy;
+            var _btn_nomes = ["Salvar", "Carregar"];
+            var _btn_xs = [Opcoes_Btn_Salvar_X, Opcoes_Btn_Carregar_X];
+
+            for (var i = 0; i < 2; i++) {
+                var _bbx = _btn_xs[i] + _ox;
+                var _sobre_btn = _mouse_na_area && point_in_rectangle(_Mouse_X, _Mouse_Y, _btn_xs[i], _btn_y_tela, _btn_xs[i] + Opcoes_Btn_W, _btn_y_tela + Opcoes_Btn_H);
+
+                draw_set_colour(_sobre_btn ? c_gray : c_dkgrey);
+                draw_rectangle(_bbx, _btn_y, _bbx + Opcoes_Btn_W, _btn_y + Opcoes_Btn_H, false);
+
+                draw_set_colour(c_white);
+                draw_rectangle(_bbx, _btn_y, _bbx + Opcoes_Btn_W, _btn_y + Opcoes_Btn_H, true);
+                var _esc_btn = min(0.45, (Opcoes_Btn_W - 6) / max(1, string_width(_btn_nomes[i])));
+                draw_text_transformed(_bbx + (Opcoes_Btn_W / 2), _btn_y + (Opcoes_Btn_H / 2), _btn_nomes[i], _esc_btn, _esc_btn, 0);
+            }
+
+            matrix_set(matrix_world, matrix_build_identity());
+            surface_reset_target();
+
+            draw_surface_ext(global.opcoes_surface, Opcoes_Area_X, Opcoes_Area_Y, 1 / _k, 1 / _k, 0, c_white, 1);
+
+            if (Opcoes_Max_Scroll > 0) {
+                var _bar_h = Opcoes_Area_H;
+                var _thumb_h = max(18, _bar_h * (Opcoes_Area_H / Opcoes_Altura));
+                var _thumb_y = Opcoes_Area_Y + (_bar_h - _thumb_h) * (Opcoes_Scroll / Opcoes_Max_Scroll);
+
+                draw_set_colour(c_dkgrey);
+                draw_rectangle(Opcoes_Barra_X, Opcoes_Area_Y, Opcoes_Barra_X + Opcoes_Barra_W, Opcoes_Area_Y + _bar_h, false);
+
+                draw_set_colour(Opcoes_Barra_Arrastando ? c_purple : c_white);
+                draw_rectangle(Opcoes_Barra_X, _thumb_y, Opcoes_Barra_X + Opcoes_Barra_W, _thumb_y + _thumb_h, false);
+            }
+
+            draw_set_colour(c_white);
+            draw_set_halign(fa_left);
+            draw_set_valign(fa_top);
+        }
+
         else if (Tela_Atual == "conquista") {
 
             draw_set_colour(c_white);
@@ -225,8 +353,6 @@ if (Tablet_Aberto == true) {
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
 
-            var _Mouse_X = device_mouse_x_to_gui(0);
-            var _Mouse_Y = device_mouse_y_to_gui(0);
             var _total_conquistas = array_length(global.conquistas);
             var _desbloqueadas = 0;
             var _hover = -1;
@@ -254,14 +380,28 @@ if (Tablet_Aberto == true) {
 
             if (_hover != -1) {
                 var _conq_hover = global.conquistas[_hover];
-                var _texto = _conq_hover.nome;
 
-                if (_conq_hover.desbloqueada) {
-                    _texto += "\n" + _conq_hover.descricao;
+                var _esc_tip = 0.45;      // mesmo tamanho do título
+                var _pad = 5;             // margem interna da caixa
+                var _gap = 4;             // espaço entre o nome e a descrição
+                var _larg_max = 180;      // largura máxima do texto (em pixels da GUI)
+                var _sep = string_height("Ag") * 1.15; // distância entre linhas da descrição
+
+                var _nome = _conq_hover.nome;
+                var _desc = _conq_hover.desbloqueada ? _conq_hover.descricao : "";
+
+                var _w_nome = string_width(_nome) * _esc_tip;
+                var _h_nome = string_height(_nome) * _esc_tip;
+                var _w_desc = 0;
+                var _h_desc = 0;
+
+                if (_desc != "") {
+                    _w_desc = string_width_ext(_desc, _sep, _larg_max / _esc_tip) * _esc_tip;
+                    _h_desc = string_height_ext(_desc, _sep, _larg_max / _esc_tip) * _esc_tip;
                 }
 
-                var _larg = (string_width(_texto) * 0.4) + 10;
-                var _alt = (string_height(_texto) * 0.4) + 10;
+                var _larg = max(_w_nome, _w_desc) + (_pad * 2);
+                var _alt = _h_nome + ((_desc != "") ? (_gap + _h_desc) : 0) + (_pad * 2);
                 var _bx = min(_Mouse_X + 8, display_get_gui_width() - _larg - 2);
                 var _by = min(_Mouse_Y + 8, display_get_gui_height() - _alt - 2);
 
@@ -273,7 +413,11 @@ if (Tablet_Aberto == true) {
                 draw_set_colour(c_white);
                 draw_rectangle(_bx, _by, _bx + _larg, _by + _alt, true);
 
-                draw_text_transformed(_bx + 5, _by + 5, _texto, 0.4, 0.4, 0);
+                draw_text_transformed(_bx + _pad, _by + _pad, _nome, _esc_tip, _esc_tip, 0);
+
+                if (_desc != "") {
+                    draw_text_ext_transformed(_bx + _pad, _by + _pad + _h_nome + _gap, _desc, _sep, _larg_max / _esc_tip, _esc_tip, _esc_tip, 0);
+                }
             }
         }
 
@@ -297,7 +441,7 @@ if (Tablet_Aberto == true) {
             var _bs_y = Pos_Fundo_Y + 55;
 
             draw_sprite(sBtn_FecharJogo, 0, _bs_x, _bs_y);
-            draw_text_transformed(_bs_x + (sprite_get_width(sBtn_FecharJogo) / 2), _bs_y + (sprite_get_height(sBtn_FecharJogo) / 2), "Fechar Jogo", 0.35, 0.35, 0);
+            draw_text_transformed(_bs_x + (sprite_get_width(sBtn_FecharJogo) / 2), _bs_y + (sprite_get_height(sBtn_FecharJogo) / 2), "Salvar e Fechar Jogo", 0.35, 0.35, 0);
 
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);

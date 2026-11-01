@@ -1,6 +1,6 @@
 event_inherited()
-Nome = "Cobre";
-Sprite = sCobre;
-Quantidade = 1;
-Descricao = "Metal com alta condutividade elétrica e termica,\nusado para fios, condutores e dissípadores";
-sprite_index = Sprite
+nome = "Cobre";
+sprite = sCobre;
+quantidade = 1;
+descricao = "Metal com alta condutividade elétrica e termica,\nusado para fios, condutores e dissípadores";
+sprite_index = sprite

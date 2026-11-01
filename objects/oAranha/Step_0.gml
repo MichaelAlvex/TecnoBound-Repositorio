@@ -25,7 +25,7 @@ if (instance_exists(oPlayer)) {
 	}
 }
 
-Colisao_Paredes(oParede_Invisivel);
+scrColisao_Paredes(oParede_Invisivel);
 
 Direcao_Player = point_direction(x, y, oPlayer.x, oPlayer.y);
 

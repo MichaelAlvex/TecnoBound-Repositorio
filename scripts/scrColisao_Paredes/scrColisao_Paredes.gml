@@ -1,4 +1,4 @@
-function Colisao_Paredes(oParede_Invisivel){
+function scrColisao_Paredes(oParede_Invisivel){
 	if (place_meeting(x + VelH, y, oParede_Invisivel)){
 			while (!place_meeting(x + sign(VelH), y, oParede_Invisivel)){
 				x += sign(VelH);
