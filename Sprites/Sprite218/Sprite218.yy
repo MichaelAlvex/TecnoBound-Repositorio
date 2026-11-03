@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"TecnoBound",
-    "path":"TecnoBound.yyp",
+    "name":"Pecas_Montagem",
+    "path":"folders/Sprites/Pecas_Montagem.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

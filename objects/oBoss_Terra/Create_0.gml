@@ -1,6 +1,6 @@
 depth = oPlayer.depth + 100;
 tipo_monstro = "Boss de terra";
-HP_Monstro = 1100;
+HP_Monstro = 500;
 HP_Max = HP_Monstro;
 hp_visual = HP_Monstro;
 hp_guardado = HP_Monstro;

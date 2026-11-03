@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Boss_Terra",
-    "path":"folders/Sprites/Bosses/Boss_Terra.yy",
+    "name":"Corvo",
+    "path":"folders/Sprites/Bosses/Boss_Terra/Corvo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

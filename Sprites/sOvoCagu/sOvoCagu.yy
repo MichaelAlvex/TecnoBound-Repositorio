@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Boss_Terra",
-    "path":"folders/Sprites/Bosses/Boss_Terra.yy",
+    "name":"Cagu",
+    "path":"folders/Sprites/Bosses/Boss_Terra/Cagu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
