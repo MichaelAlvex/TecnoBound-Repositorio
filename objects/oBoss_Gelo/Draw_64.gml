@@ -3,7 +3,7 @@ var _gw = display_get_gui_width();
 var _larg = 300;
 var _alt = 8;
 var _bx = (_gw - _larg) / 2;
-var _by = 24;
+var _by = 34;
 
 var _pct_real = clamp(HP_Monstro / HP_Max, 0, 1);
 var _pct_visual = clamp(hp_visual / HP_Max, 0, 1);

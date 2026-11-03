@@ -1,0 +1,1 @@
+if (instance_exists(parede)) instance_destroy(parede);

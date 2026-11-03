@@ -6,6 +6,7 @@ tempo_subida = 20;
 tempo_ativo = 90;
 tempo_sumir = 30;
 
+depth = oPlayer.depth + 2;
 sprite_index = sEspinho_Gelo_Aviso;
 image_speed = 1;
 

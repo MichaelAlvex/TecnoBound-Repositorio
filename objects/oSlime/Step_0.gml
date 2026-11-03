@@ -27,7 +27,7 @@ if (Timer_No_Ar > 0){
 		
 		if (instance_exists(oPlayer)){
 			
-			var _Direcao = point_direction(x, y, oPlayer.x, oPlayer.y);
+			var _Direcao = point_direction(x, y, oPlayer.x + 16, oPlayer.y + 29);
 			VelH = lengthdir_x(Velocidade, _Direcao);
 			VelV = lengthdir_y(Velocidade, _Direcao);
 			
