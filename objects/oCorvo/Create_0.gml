@@ -1,3 +1,4 @@
+depth = oPlayer.depth -1;
 HP_Monstro = 90;
 tipo_monstro = "Corvo-da-Nova-Caledônia";
 

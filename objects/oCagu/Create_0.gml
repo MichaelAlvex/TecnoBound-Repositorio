@@ -1,3 +1,4 @@
+depth = oPlayer.depth -1;
 tipo_monstro = "Cagú";
 HP_Monstro = 80;
 spd = 3;                       

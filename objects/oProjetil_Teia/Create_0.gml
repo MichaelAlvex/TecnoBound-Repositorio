@@ -1,3 +1,4 @@
+depth = oPlayer.depth -1;
 alvo_x = x;
 alvo_y = y;
 

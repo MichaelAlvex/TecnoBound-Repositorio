@@ -1,3 +1,4 @@
+objeto_drop = oNiquel;
 depth = oPlayer.depth + 100;
 tipo_monstro = "Boss de terra";
 HP_Monstro = 500;

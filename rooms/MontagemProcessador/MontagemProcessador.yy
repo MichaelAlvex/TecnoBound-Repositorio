@@ -15,6 +15,7 @@
     {"name":"inst_610D7D61","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},
     {"name":"inst_3994C7E3","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},
     {"name":"inst_7C73E9A7","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},
+    {"name":"inst_4D1DEA5F","path":"rooms/MontagemProcessador/MontagemProcessador.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,6 +29,7 @@
         {"$GMRInstance":"v4","%Name":"inst_610D7D61","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_610D7D61","objectId":{"name":"P2","path":"objects/P2/P2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":166.0,"y":78.0,},
         {"$GMRInstance":"v4","%Name":"inst_3994C7E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3994C7E3","objectId":{"name":"P3","path":"objects/P3/P3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":72.0,"y":67.0,},
         {"$GMRInstance":"v4","%Name":"inst_7C73E9A7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C73E9A7","objectId":{"name":"oSalas_Sem_Player","path":"objects/oSalas_Sem_Player/oSalas_Sem_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":147.0,"y":144.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4D1DEA5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D1DEA5F","objectId":{"name":"oSalas_Sem_Tablet","path":"objects/oSalas_Sem_Tablet/oSalas_Sem_Tablet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":92.0,"y":154.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Sprite69","path":"sprites/Sprite69/Sprite69.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

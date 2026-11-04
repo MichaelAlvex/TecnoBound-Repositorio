@@ -124,3 +124,57 @@ global.conquistas = [
         condicao: function() { return global.stat_pedidos >= 10; }
     }
 ];
+
+Ajuda_Pagina = 0;
+
+Ajuda_Paginas = [
+    {
+        titulo: "Controles",
+        texto:  "Use as teclas WASD para andar pelo mapa e o Espaço para rolar.\nAperte E para abrir ou fechar o tablet.\nPressione com o botão esquerdo do mouse para usar a broca",
+        sprite: asset_get_index("sAjuda_1")
+    },
+    {
+        titulo: "Mineração",
+        texto:  "Quebre minérios que você encontrar com sua broca para coleta-los e usa-los na fabricação de peças.\nVocê pode ver os tipos e quantidades necessários para o pedido aceito no menu de pedidos.",
+        sprite: asset_get_index("sAjuda_2")
+    },
+    {
+        titulo: "Combate",
+        texto:  "Você não está sozinha nas cavernas!\nMonstros espreitam por aí e vão fazer de tudo para te derrotar.\nUse a sua broca para dar dano e elimina-los antes que eleminem você.",
+        sprite: asset_get_index("sAjuda_3")
+    },
+    {
+        titulo: "Bosses",
+        texto:  "Nem todo minério pode ser coletado de pedras, alguns são guardados pessoalmente por monstros terríveis que ficam no nível mais baixo de seus biomas.\nDerrotar um boss pode ser difícil, mas vai te garantir um minério exclusivo e acesso a um novo bioma.",
+        sprite: asset_get_index("sAjuda_4")
+    },
+	{
+        titulo: "Concluindo o pedido",
+        texto:  "Quando todos os minerios necessários forem coletados, use o menu de oficina para se ir direto para a estação de fabricação de peças, lá você fornecerá os minérios necessários e juntará pedaços de hardware para concluir o pedido.",
+        sprite: asset_get_index("sAjuda_5")
+    },
+	{
+        titulo: "Novos pedidos",
+        texto:  "Entregar um pedido não é o fim, você pode usar o dinheiro obtido dos pedidos para desbloquear mais peças e realizar pedidos ainda mais elaborados.",
+        sprite: asset_get_index("sAjuda_6")
+    }
+];
+
+var _tab_w = sprite_get_width(sTablet_Fundo);
+var _tab_h = sprite_get_height(sTablet_Fundo);
+
+Ajuda_Area_X = Pos_Fundo_X + 15;
+Ajuda_Area_Y = Pos_Fundo_Y + 30;
+Ajuda_Area_W = _tab_w - 30;
+Ajuda_Area_H = _tab_h - 30 - 12;
+
+Ajuda_Seta_Tam = 14;
+Ajuda_Rodape_Y = Ajuda_Area_Y + Ajuda_Area_H - Ajuda_Seta_Tam;
+var _cx = Ajuda_Area_X + (Ajuda_Area_W / 2);
+Ajuda_Seta_Esq_X = _cx - 40 - Ajuda_Seta_Tam;
+Ajuda_Seta_Dir_X = _cx + 40;
+
+Ajuda_Corpo_H = Ajuda_Rodape_Y - Ajuda_Area_Y - 4;
+Ajuda_Img_W   = floor(Ajuda_Area_W * 0.42);
+Ajuda_Texto_X = Ajuda_Area_X + Ajuda_Img_W + 8;
+Ajuda_Texto_W = Ajuda_Area_W - Ajuda_Img_W - 8;

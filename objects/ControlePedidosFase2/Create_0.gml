@@ -1,9 +1,9 @@
 persistent = false;
 
 pedidos = [
-    "Ola! Gostaria de encomendar uma placa-mae.",
-    "Ola! Gostaria de encomendar uma placa de video.",
-    "Ola! Gostaria de encomendar um processador."
+    "Ola! Gostaria de encomendar uma placa-mae.\n[Medio]",
+    "Ola! Gostaria de encomendar uma placa de video.\n[Dificil]",
+    "Ola! Gostaria de encomendar um processador.\n[Facil]"
 ];
 
 pedidoAtual = irandom(2);

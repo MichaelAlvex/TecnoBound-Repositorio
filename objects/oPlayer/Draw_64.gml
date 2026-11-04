@@ -1,5 +1,5 @@
 if (instance_exists(oPlayer)){
-	var _Total_Vida = 5;
+	var _Total_Vida = 10;
 	var _Pos_X_Vida = 10;
 	var _Pos_Y_Vida = 10;
 	var _Espacamento_Vida = 15;
@@ -12,4 +12,11 @@ if (instance_exists(oPlayer)){
 			draw_sprite(sVida_Vazia, 0, _Pos_X_Vida + (_i * _Espacamento_Vida), _Pos_Y_Vida);
 		}
 	}
+}
+
+var larg = sprite_get_width(sEnergia);
+
+for (var i = 0; i < max_celulas; i++) {
+    var frame = (i < energia) ? 1 : 0;   
+    draw_sprite(sEnergia, frame, pos_x + i * (larg + espaco), pos_y);
 }

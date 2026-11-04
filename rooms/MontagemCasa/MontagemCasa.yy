@@ -20,6 +20,7 @@
     {"name":"inst_5B3EC5F5","path":"rooms/MontagemCasa/MontagemCasa.yy",},
     {"name":"inst_1C2444F5","path":"rooms/MontagemCasa/MontagemCasa.yy",},
     {"name":"inst_22C88595","path":"rooms/MontagemCasa/MontagemCasa.yy",},
+    {"name":"inst_7FEAC2A4","path":"rooms/MontagemCasa/MontagemCasa.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,6 +39,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5B3EC5F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B3EC5F5","objectId":{"name":"TampaGabinete1","path":"objects/TampaGabinete1/TampaGabinete1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":68.0,"y":51.0,},
         {"$GMRInstance":"v4","%Name":"inst_1C2444F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C2444F5","objectId":{"name":"oSalas_Sem_Player","path":"objects/oSalas_Sem_Player/oSalas_Sem_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":83.0,"y":202.0,},
         {"$GMRInstance":"v4","%Name":"inst_22C88595","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22C88595","objectId":{"name":"InternoMonitor1","path":"objects/InternoMonitor1/InternoMonitor1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":526.0,"y":139.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7FEAC2A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FEAC2A4","objectId":{"name":"oSalas_Sem_Tablet","path":"objects/oSalas_Sem_Tablet/oSalas_Sem_Tablet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":102.0,"y":203.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Oficina","path":"sprites/Oficina/Oficina.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

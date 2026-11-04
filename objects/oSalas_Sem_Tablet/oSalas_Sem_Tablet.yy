@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oMenu_Inicio",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oSalas_Sem_Tablet",
+  "eventList":[],
   "managed":true,
-  "name":"oMenu_Inicio",
+  "name":"oSalas_Sem_Tablet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos_Abstratos",

@@ -221,7 +221,7 @@ while (_NumPedras_Tugstenio < _qntPedras_Tugstenio && _Tentativas_Tugstenio < 10
 	_Tentativas_Tugstenio++;
 	}
 	
-var _qntMonstros = irandom_range(10, 10);
+var _qntMonstros = irandom_range(4, 7);
 var _NumMonstros = 0;
 var _Tentativas_Monstros = 0;
 

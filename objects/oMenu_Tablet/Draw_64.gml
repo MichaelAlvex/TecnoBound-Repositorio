@@ -122,10 +122,10 @@ if (Tablet_Aberto == true) {
             draw_set_colour(c_white);
 
             var _y_pos = -stat_scroll;
-            var _espacamento = 13;                    // altura de uma linha de texto
-            var _esp_item = _espacamento * 2;         // distância entre itens de uma lista
-            var _esp_secao = _espacamento;            // folga antes de um novo título de seção
-            var _esp_titulo = _espacamento * 2;       // distância do título da seção até o 1º item
+            var _espacamento = 13;                  
+            var _esp_item = _espacamento * 2;        
+            var _esp_secao = _espacamento;           
+            var _esp_titulo = _espacamento * 2;      
 
             draw_text_transformed(0, _y_pos, "=== ESTATÍSTICAS ===", 1, 1, 0);
             _y_pos += _espacamento + 4;
@@ -213,11 +213,11 @@ if (Tablet_Aberto == true) {
             var _nomes_volume = ["Geral", "BGM", "SFX", "UI"];
 
             draw_set_colour(c_white);
-            draw_set_font(Font1);
+            draw_set_font(Font2);
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
 
-            draw_text_transformed(Pos_Fundo_X + 15, Pos_Fundo_Y + 15, "Opções", 0.45, 0.45, 0);
+            draw_text_transformed(Pos_Fundo_X + 15, Pos_Fundo_Y + 15, "Opções", 0.5, 0.5, 0);
 
             var _k = max(1, window_get_width() / display_get_gui_width());
 
@@ -243,8 +243,8 @@ if (Tablet_Aberto == true) {
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
 
-            draw_text_transformed(Pos_Fundo_X + 15 + _ox, Pos_Fundo_Y + 32 + _oy, "Volume", 0.45, 0.45, 0);
-            draw_text_transformed(Conf_Tela_X + _ox, Pos_Fundo_Y + 32 + _oy, "Tela", 0.45, 0.45, 0);
+            draw_text_transformed(Pos_Fundo_X + 15 + _ox, Pos_Fundo_Y + 32 + _oy, "Volume", 0.5, 0.5, 0);
+            draw_text_transformed(Conf_Tela_X + _ox, Pos_Fundo_Y + 32 + _oy, "Tela", 0.5, 0.5, 0);
 
             draw_set_valign(fa_middle);
 
@@ -255,7 +255,7 @@ if (Tablet_Aberto == true) {
                 var _trilho_x = Conf_Vol_X + _ox;
 
                 draw_set_colour(c_white);
-                draw_text_transformed(Pos_Fundo_X + 15 + _ox, _sy, _nomes_volume[i], 0.45, 0.45, 0);
+                draw_text_transformed(Pos_Fundo_X + 15 + _ox, _sy, _nomes_volume[i], 0.5, 0.5, 0);
 
                 draw_set_colour(c_dkgrey);
                 draw_rectangle(_trilho_x, _sy - 2, _trilho_x + Conf_Vol_W, _sy + 2, false);
@@ -269,7 +269,7 @@ if (Tablet_Aberto == true) {
                 draw_rectangle(_knob_x - 3, _sy - 5, _knob_x + 3, _sy + 5, false);
 
                 draw_set_colour(c_white);
-                draw_text_transformed(Conf_Vol_X + Conf_Vol_W + 8 + _ox, _sy, string(round(_valor * 100)) + "%", 0.45, 0.45, 0);
+                draw_text_transformed(Conf_Vol_X + Conf_Vol_W + 8 + _ox, _sy, string(round(_valor * 100)) + "%", 0.5, 0.5, 0);
             }
 
             draw_set_halign(fa_center);
@@ -381,11 +381,11 @@ if (Tablet_Aberto == true) {
             if (_hover != -1) {
                 var _conq_hover = global.conquistas[_hover];
 
-                var _esc_tip = 0.45;      // mesmo tamanho do título
-                var _pad = 5;             // margem interna da caixa
-                var _gap = 4;             // espaço entre o nome e a descrição
-                var _larg_max = 180;      // largura máxima do texto (em pixels da GUI)
-                var _sep = string_height("Ag") * 1.15; // distância entre linhas da descrição
+                var _esc_tip = 0.45;     
+                var _pad = 5;            
+                var _gap = 4;            
+                var _larg_max = 180;      
+                var _sep = string_height("Ag") * 1.15; 
 
                 var _nome = _conq_hover.nome;
                 var _desc = _conq_hover.desbloqueada ? _conq_hover.descricao : "";
@@ -445,6 +445,90 @@ if (Tablet_Aberto == true) {
 
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
-        }
+        } else if (Tela_Atual == "ajuda") {
+
+    var _pag = Ajuda_Paginas[Ajuda_Pagina];
+    var _n_pag = array_length(Ajuda_Paginas);
+
+    draw_set_font(Font1);
+    draw_set_colour(c_white);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+
+    draw_text_transformed(Pos_Fundo_X + 15, Pos_Fundo_Y + 15, "Ajuda", 0.45, 0.45, 0);
+
+    var _ix = Ajuda_Area_X;
+    var _iy = Ajuda_Area_Y;
+    var _iw = Ajuda_Img_W;
+    var _ih = Ajuda_Corpo_H;
+
+    draw_set_colour(c_dkgrey);
+    draw_rectangle(_ix, _iy, _ix + _iw, _iy + _ih, false);
+
+    if (sprite_exists(_pag.sprite)) {
+        var _sw = sprite_get_width(_pag.sprite);
+        var _sh = sprite_get_height(_pag.sprite);
+        var _esc_img = min((_iw - 4) / _sw, (_ih - 4) / _sh);
+        var _dx = _ix + ((_iw - (_sw * _esc_img)) / 2) + (sprite_get_xoffset(_pag.sprite) * _esc_img);
+        var _dy = _iy + ((_ih - (_sh * _esc_img)) / 2) + (sprite_get_yoffset(_pag.sprite) * _esc_img);
+
+        draw_sprite_ext(_pag.sprite, 0, _dx, _dy, _esc_img, _esc_img, 0, c_white, 1);
+    } else {
+        draw_set_colour(c_gray);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_middle);
+        draw_text_transformed(_ix + (_iw / 2), _iy + (_ih / 2), "Imagem", 0.4, 0.4, 0);
+        draw_set_halign(fa_left);
+        draw_set_valign(fa_top);
+    }
+
+    draw_set_colour(c_white);
+    draw_rectangle(_ix, _iy, _ix + _iw, _iy + _ih, true);
+
+    var _tx = Ajuda_Texto_X;
+    var _ty = Ajuda_Area_Y;
+    var _tw = Ajuda_Texto_W;
+
+    var _esc_tit = 0.5;
+    draw_text_transformed(_tx, _ty, _pag.titulo, _esc_tit, _esc_tit, 0);
+    var _h_tit = (string_height(_pag.titulo) * _esc_tit) + 4;
+
+    var _sep = string_height("Ag") * 1.15;
+    var _th = Ajuda_Corpo_H - _h_tit;
+    var _esc_txt = 0.4;
+
+    while (_esc_txt > 0.2 && (string_height_ext(_pag.texto, _sep, _tw / _esc_txt) * _esc_txt) > _th) {
+        _esc_txt -= 0.025;
+    }
+
+    draw_text_ext_transformed(_tx, _ty + _h_tit, _pag.texto, _sep, _tw / _esc_txt, _esc_txt, _esc_txt, 0);
+
+    var _ty_seta = Ajuda_Rodape_Y;
+    var _t = Ajuda_Seta_Tam;
+    var _xe = Ajuda_Seta_Esq_X;
+    var _xd = Ajuda_Seta_Dir_X;
+
+    var _sobre_e = point_in_rectangle(_Mouse_X, _Mouse_Y, _xe, _ty_seta, _xe + _t, _ty_seta + _t);
+    var _sobre_d = point_in_rectangle(_Mouse_X, _Mouse_Y, _xd, _ty_seta, _xd + _t, _ty_seta + _t);
+
+    draw_set_colour(_sobre_e ? c_gray : c_dkgrey);
+    draw_rectangle(_xe, _ty_seta, _xe + _t, _ty_seta + _t, false);
+    draw_set_colour(c_white);
+    draw_rectangle(_xe, _ty_seta, _xe + _t, _ty_seta + _t, true);
+    draw_triangle(_xe + _t - 4, _ty_seta + 3, _xe + _t - 4, _ty_seta + _t - 3, _xe + 4, _ty_seta + (_t / 2), false);
+
+    draw_set_colour(_sobre_d ? c_gray : c_dkgrey);
+    draw_rectangle(_xd, _ty_seta, _xd + _t, _ty_seta + _t, false);
+    draw_set_colour(c_white);
+    draw_rectangle(_xd, _ty_seta, _xd + _t, _ty_seta + _t, true);
+    draw_triangle(_xd + 4, _ty_seta + 3, _xd + 4, _ty_seta + _t - 3, _xd + _t - 4, _ty_seta + (_t / 2), false);
+
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text_transformed(Ajuda_Area_X + (Ajuda_Area_W / 2), _ty_seta + (_t / 2), string(Ajuda_Pagina + 1) + "/" + string(_n_pag), 0.45, 0.45, 0);
+
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+}
     }
 }

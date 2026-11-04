@@ -1,12 +1,18 @@
 if (room == Pedidos && global.faseAtual == 1) {
+	draw_set_font(Font1);
     draw_set_color(c_black);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
+	var larguraGUI = display_get_gui_width();
+    var alturaGUI = display_get_gui_height();
 
-    draw_text(
-        790,
-        350,
-        pedidos[pedidoAtual]
+    draw_text_transformed(
+        larguraGUI * 0.6 - 12,
+        alturaGUI * 0.5 - 10,
+        pedidos[pedidoAtual],
+        0.5,
+        0.5,
+        0
     );
 
     draw_set_halign(fa_left);

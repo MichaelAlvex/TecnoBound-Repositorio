@@ -1,3 +1,4 @@
+objeto_drop = oPerovskita;
 depth = oPlayer.depth + 1;
 tipo_monstro = "Boss de lava";
 nome_boss = "Golem de Lava";

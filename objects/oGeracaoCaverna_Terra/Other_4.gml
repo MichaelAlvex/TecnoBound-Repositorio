@@ -221,7 +221,7 @@ while (_NumPedras_Bauxita < _qntPedras_Bauxita && _Tentativas_Bauxita < 1000){
 	_Tentativas_Bauxita++;
 	}
 	
-var _qntMonstros = irandom_range(10, 10);
+var _qntMonstros = irandom_range(4, 7);
 var _NumMonstros = 0;
 var _Tentativas_Monstros = 0;
 

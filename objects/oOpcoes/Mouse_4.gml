@@ -1,0 +1,1 @@
+Opcoes_Abertas = !Opcoes_Abertas;

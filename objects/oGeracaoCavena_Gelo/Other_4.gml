@@ -230,7 +230,7 @@ while (_NumPedras_Grafite < _qntPedras_Grafite && _Tentativas_Grafite < 1000){
 	}
 	
 	
-var _qntMonstros = irandom_range(10, 10);
+var _qntMonstros = irandom_range(4, 7);
 var _NumMonstros = 0;
 var _Tentativas_Monstros = 0;
 

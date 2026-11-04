@@ -17,6 +17,7 @@
     {"name":"inst_298C744D","path":"rooms/MontagemPMae/MontagemPMae.yy",},
     {"name":"inst_45E53B13","path":"rooms/MontagemPMae/MontagemPMae.yy",},
     {"name":"inst_7CA6830A","path":"rooms/MontagemPMae/MontagemPMae.yy",},
+    {"name":"inst_54CD3FA5","path":"rooms/MontagemPMae/MontagemPMae.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
         {"$GMRInstance":"v4","%Name":"inst_298C744D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_298C744D","objectId":{"name":"ControlePM","path":"objects/ControlePM/ControlePM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":231.0,"y":140.0,},
         {"$GMRInstance":"v4","%Name":"inst_45E53B13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45E53B13","objectId":{"name":"ProntoPM","path":"objects/ProntoPM/ProntoPM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":171.0,},
         {"$GMRInstance":"v4","%Name":"inst_7CA6830A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CA6830A","objectId":{"name":"oSalas_Sem_Player","path":"objects/oSalas_Sem_Player/oSalas_Sem_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":83.0,"y":156.0,},
+        {"$GMRInstance":"v4","%Name":"inst_54CD3FA5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54CD3FA5","objectId":{"name":"oSalas_Sem_Tablet","path":"objects/oSalas_Sem_Tablet/oSalas_Sem_Tablet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":106.0,"y":156.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Sprite69","path":"sprites/Sprite69/Sprite69.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

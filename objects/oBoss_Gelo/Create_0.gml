@@ -1,3 +1,4 @@
+objeto_drop = oNeodimio;
 depth = oPlayer.depth + 1;
 cone_passo = 2;       
 garra_alcance = 128;   

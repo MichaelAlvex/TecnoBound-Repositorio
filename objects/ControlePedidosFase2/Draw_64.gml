@@ -9,7 +9,7 @@ if (room == Pedidos && global.faseAtual == 2) {
 
 draw_text_transformed(
     larguraGUI * 0.6-8,
-alturaGUI * 0.5-10,
+	alturaGUI * 0.5-10,
     pedidos[pedidoAtual],
     0.5,
     0.5,

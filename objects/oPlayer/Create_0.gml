@@ -7,7 +7,8 @@ if (instance_number(oPlayer) > 1){
 
 Timer_Empurrao = 4;
 IFrames = 50;
-HP_Player = 5;
+HP_Max_Player = 10;
+HP_Player = 10;
 Player_Move = true
 depth = 2;
 Velocidade = 1.5;
@@ -25,7 +26,6 @@ Lentidao = false;
 Tempo_Lentidao = 0;
 
 display_set_gui_size(640, 360);
-window_set_size(1280, 720);
 
 instance_create_layer(0, 0, "Instances", oInventario);
 instance_create_layer(0, 0, "Instances", oMenu_Tablet);
@@ -33,3 +33,17 @@ instance_create_layer(0, 0, "Instances", oMenu_Tablet);
 global.total_passos = 0;
 contador_movimento = 0;
 intervalo_passo = 10;
+
+
+max_celulas   = 5;      
+energia       = 0;      
+cura_por_raio = 1;     
+espaco        = 4;     
+pos_x         = 10;     
+pos_y         = 28;
+
+monstros_anterior = global.stat_total_monstros;
+
+pedras_por_energia = 5;
+pedras_anterior    = global.stat_total_minerios;
+pedras_acumuladas  = 0;

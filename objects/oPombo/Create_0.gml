@@ -1,3 +1,4 @@
+depth = oPlayer.depth -1;
 tipo_monstro = "Pombo-gigante-da-nova-caledônia"
 HP_Monstro = 60;
 spd = 2;               

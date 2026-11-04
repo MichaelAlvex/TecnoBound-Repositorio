@@ -243,3 +243,29 @@ if (_movendo) {
 } else {
     contador_movimento = 0; 
 }
+
+var novos = global.stat_total_monstros - monstros_anterior;
+if (novos > 0) {
+    energia = min(energia + novos, max_celulas);
+}
+monstros_anterior = global.stat_total_monstros;
+
+if (keyboard_check_pressed(ord("Q")) && energia > 0 && instance_exists(oPlayer)) {
+    if (oPlayer.HP_Player < oPlayer.HP_Max_Player) {
+        energia -= 1;
+        oPlayer.HP_Player = min(oPlayer.HP_Player + cura_por_raio, oPlayer.HP_Max_Player);
+    }
+}
+
+var novas_pedras = global.stat_total_minerios - pedras_anterior;
+pedras_anterior = global.stat_total_minerios;
+
+if (novas_pedras > 0) {
+    pedras_acumuladas += novas_pedras;
+
+    var ganho = pedras_acumuladas div pedras_por_energia;   
+    if (ganho > 0) {
+        energia = min(energia + ganho, max_celulas);
+        pedras_acumuladas = pedras_acumuladas mod pedras_por_energia; 
+    }
+}

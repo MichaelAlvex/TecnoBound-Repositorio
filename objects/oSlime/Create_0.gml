@@ -1,3 +1,4 @@
+depth = oPlayer.depth -1;
 Velocidade = 2;
 VelH = 0;
 VelV = 0;

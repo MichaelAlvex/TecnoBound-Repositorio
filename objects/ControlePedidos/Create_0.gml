@@ -1,3 +1,4 @@
+depth = -9999;
 persistent = true;
 
 if (!variable_global_exists("faseAtual")) {
@@ -5,9 +6,9 @@ if (!variable_global_exists("faseAtual")) {
 }
 
 pedidos = [
-    "Olá! Gostaria de encomendar um mouse.",
-    "Olá! Gostaria de encomendar um teclado.",
-    "Olá! Gostaria de encomendar um monitor."
+    "Olá! Gostaria de encomendar um mouse.\n[Facil]",
+    "Olá! Gostaria de encomendar um teclado.\n[Medio]",
+    "Olá! Gostaria de encomendar um monitor.\n[Dificil]"
 ];
 
 if (!variable_global_exists("pedidoAtivo")) {

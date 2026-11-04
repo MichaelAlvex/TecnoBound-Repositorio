@@ -30,7 +30,7 @@ if (!Conf_Grupos_Prontos) {
     }
 }
 
-if (Tablet_Aberto == false || Tela_Atual == "home") {
+if ((Tablet_Aberto == false || Tela_Atual == "home") && !instance_exists(oSalas_Sem_Tablet)) {
     if (keyboard_check_pressed(ord("E"))) {
         Tablet_Aberto = !Tablet_Aberto;
 
@@ -134,8 +134,9 @@ if (Tablet_Aberto == true) {
         if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, _App7_x, _App7_y, _App7_x + _Tam_App, _App7_y + _Tam_App)) {
             if (mouse_check_button_pressed(mb_left)) {
 
-                Tela_Atual = "ajuda"
-            }
+				 Tela_Atual = "ajuda";
+				 Ajuda_Pagina = 0;
+			}
         }
 
         var _App8_x = Pos_Fundo_X + 220;
@@ -255,8 +256,29 @@ if (Tablet_Aberto == true) {
                 }
             }
         }
+		
+		if (Tela_Atual == "ajuda") {
+
+    var _n = array_length(Ajuda_Paginas);
+    var _voltar = keyboard_check_pressed(vk_left);
+    var _avancar = keyboard_check_pressed(vk_right);
+
+    if (mouse_check_button_pressed(mb_left)) {
+        if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Ajuda_Seta_Esq_X, Ajuda_Rodape_Y, Ajuda_Seta_Esq_X + Ajuda_Seta_Tam, Ajuda_Rodape_Y + Ajuda_Seta_Tam)) {
+            _voltar = true;
+        }
+        if (point_in_rectangle(_Mouse_Gui_X, _Mouse_Gui_Y, Ajuda_Seta_Dir_X, Ajuda_Rodape_Y, Ajuda_Seta_Dir_X + Ajuda_Seta_Tam, Ajuda_Rodape_Y + Ajuda_Seta_Tam)) {
+            _avancar = true;
+        }
+    }
+
+    if (_voltar)  Ajuda_Pagina = (Ajuda_Pagina - 1 + _n) mod _n;
+    if (_avancar) Ajuda_Pagina = (Ajuda_Pagina + 1) mod _n;
+}
     }
 }
+
+
 
 if (Tablet_Aberto && Tela_Atual == "stats") {
 
