@@ -286,8 +286,8 @@
   "maintainGms1Font":false,
   "name":"Font_Pequena",
   "parent":{
-    "name":"TecnoBound",
-    "path":"TecnoBound.yyp",
+    "name":"Fontes",
+    "path":"folders/Fontes.yy",
   },
   "pointRounding":0,
   "ranges":[

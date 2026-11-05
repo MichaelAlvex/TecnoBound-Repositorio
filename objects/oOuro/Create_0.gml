@@ -2,6 +2,6 @@ event_inherited();
 nome = "Ouro";
 sprite = sOuro;
 quantidade = 1;
-descricao = "Metal com alta condutividade elétrica e termica,\nusado para fios, condutores e dissípadores";
+descricao = "Metal que não enferruja,\nusado nos contatos de memórias RAM,\nplacas de vídeo e processadores";
 sprite_index = sprite
 

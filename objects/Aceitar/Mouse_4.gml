@@ -123,3 +123,5 @@ receitas.PCEscritorio = [
 
 Pos_Receita_X = (display_get_gui_width() / 2) + 150; 
 Pos_Receita_Y = (display_get_gui_height() / 2) - 100;
+
+audio_play_sound(snd_Click, 2, 0);

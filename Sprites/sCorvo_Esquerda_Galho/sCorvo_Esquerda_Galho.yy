@@ -2,24 +2,27 @@
   "$GMSprite":"v2",
   "%Name":"sCorvo_Esquerda_Galho",
   "bboxMode":0,
-  "bbox_bottom":15,
+  "bbox_bottom":31,
   "bbox_left":0,
-  "bbox_right":14,
-  "bbox_top":3,
+  "bbox_right":30,
+  "bbox_top":2,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"faaa0fb2-041e-43b1-992e-4781e79dc598","name":"faaa0fb2-041e-43b1-992e-4781e79dc598","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e51539d3-a224-40c8-af9f-cce903461090","name":"e51539d3-a224-40c8-af9f-cce903461090","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"82cd460f-a5ef-40ac-b012-adf3db4537cd","name":"82cd460f-a5ef-40ac-b012-adf3db4537cd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8bb327fc-b3e9-47ab-ac41-522c5f5e2f77","name":"8bb327fc-b3e9-47ab-ac41-522c5f5e2f77","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5af05c6e-b6a4-40d5-815d-ae5013ba710f","name":"5af05c6e-b6a4-40d5-815d-ae5013ba710f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1f78e5d1-5651-457a-bb9d-264b07ccfcb0","blendMode":0,"displayName":"default","isLocked":false,"name":"1f78e5d1-5651-457a-bb9d-264b07ccfcb0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9963efb4-84cc-439e-b74e-818d22e46856","blendMode":0,"displayName":"default","isLocked":false,"name":"9963efb4-84cc-439e-b74e-818d22e46856","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sCorvo_Esquerda_Galho",
   "nineSlice":null,
@@ -49,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +62,7 @@
     },
     "name":"sCorvo_Esquerda_Galho",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,8 +72,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"faaa0fb2-041e-43b1-992e-4781e79dc598","path":"sprites/sCorvo_Esquerda_Galho/sCorvo_Esquerda_Galho.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dad4a7cc-2ec0-445c-8903-9026b83e18a8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e51539d3-a224-40c8-af9f-cce903461090","path":"sprites/sCorvo_Esquerda_Galho/sCorvo_Esquerda_Galho.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4c3891d9-b9b8-4137-b117-23eadaf13e3d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82cd460f-a5ef-40ac-b012-adf3db4537cd","path":"sprites/sCorvo_Esquerda_Galho/sCorvo_Esquerda_Galho.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bbf81bed-4e56-40ee-a63c-39739c0d8789","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8bb327fc-b3e9-47ab-ac41-522c5f5e2f77","path":"sprites/sCorvo_Esquerda_Galho/sCorvo_Esquerda_Galho.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f39d6cbf-f491-402c-9a18-f88454d62427","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5af05c6e-b6a4-40d5-815d-ae5013ba710f","path":"sprites/sCorvo_Esquerda_Galho/sCorvo_Esquerda_Galho.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"337389c0-ffa3-43a4-8e6c-779322002d56","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +98,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":32,
 }

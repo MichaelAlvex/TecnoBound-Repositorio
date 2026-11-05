@@ -292,8 +292,8 @@
   "maintainGms1Font":false,
   "name":"Font1",
   "parent":{
-    "name":"TecnoBound",
-    "path":"TecnoBound.yyp",
+    "name":"Fontes",
+    "path":"folders/Fontes.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -39,7 +39,7 @@ else if (estado == "atirar") {
 
     cooldown--;
     if (cooldown <= 0) {
-        var _p = instance_create_layer(x, y, layer, oProjetil_Semente);
+        var _p = instance_create_layer(x, y, "Instances", oProjetil_Semente);
         _p.direction   = _dir;
         _p.image_angle = _dir;
         _p.speed       = vel_semente;

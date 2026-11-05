@@ -138,25 +138,30 @@ Ajuda_Paginas = [
         texto:  "Quebre minérios que você encontrar com sua broca para coleta-los e usa-los na fabricação de peças.\nVocê pode ver os tipos e quantidades necessários para o pedido aceito no menu de pedidos.",
         sprite: asset_get_index("sAjuda_2")
     },
+	{
+        titulo: "Escadas",
+        texto:  "Toda vez que você quebra um minério ele pode revelar uma escada.\nAs escadas são o caminho para avançar nas cavernas, clique com o botão direito do mouse em cima delas para ir para o próximo andar.",
+        sprite: asset_get_index("sAjuda_3")
+    },
     {
         titulo: "Combate",
-        texto:  "Você não está sozinha nas cavernas!\nMonstros espreitam por aí e vão fazer de tudo para te derrotar.\nUse a sua broca para dar dano e elimina-los antes que eleminem você.",
-        sprite: asset_get_index("sAjuda_3")
+        texto:  "Você não está sozinha nas cavernas!\nMonstros espreitam por aí e vão fazer de tudo para te derrotar.\nUse a sua broca para dar dano e elimina-los antes que eliminem você.",
+        sprite: asset_get_index("sAjuda_4")
     },
     {
         titulo: "Bosses",
         texto:  "Nem todo minério pode ser coletado de pedras, alguns são guardados pessoalmente por monstros terríveis que ficam no nível mais baixo de seus biomas.\nDerrotar um boss pode ser difícil, mas vai te garantir um minério exclusivo e acesso a um novo bioma.",
-        sprite: asset_get_index("sAjuda_4")
+        sprite: asset_get_index("sAjuda_5")
     },
 	{
         titulo: "Concluindo o pedido",
         texto:  "Quando todos os minerios necessários forem coletados, use o menu de oficina para se ir direto para a estação de fabricação de peças, lá você fornecerá os minérios necessários e juntará pedaços de hardware para concluir o pedido.",
-        sprite: asset_get_index("sAjuda_5")
+        sprite: asset_get_index("sAjuda_6")
     },
 	{
         titulo: "Novos pedidos",
         texto:  "Entregar um pedido não é o fim, você pode usar o dinheiro obtido dos pedidos para desbloquear mais peças e realizar pedidos ainda mais elaborados.",
-        sprite: asset_get_index("sAjuda_6")
+        sprite: asset_get_index("sAjuda_7")
     }
 ];
 

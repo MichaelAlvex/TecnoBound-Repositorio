@@ -116,7 +116,7 @@ if (Tablet_Aberto == true) {
             surface_set_target(global.stat_surface);
             draw_clear_alpha(c_black, 0);
 
-            draw_set_font(Font1);
+            draw_set_font(Font4);
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
             draw_set_colour(c_white);
@@ -127,7 +127,7 @@ if (Tablet_Aberto == true) {
             var _esp_secao = _espacamento;           
             var _esp_titulo = _espacamento * 2;      
 
-            draw_text_transformed(0, _y_pos, "=== ESTATÍSTICAS ===", 1, 1, 0);
+            draw_text_transformed(0, _y_pos, "ESTATÍSTICAS", 1, 1, 0);
             _y_pos += _espacamento + 4;
 
             var _passos = variable_global_exists("stat_passos") ? global.stat_passos : 0;
@@ -205,6 +205,7 @@ if (Tablet_Aberto == true) {
 
                 draw_set_colour(c_white);
                 draw_rectangle(_bar_x, _thumb_y, _bar_x + _bar_w, _thumb_y + _thumb_h, false);
+				draw_set_font(Font1);
             }
         }
 

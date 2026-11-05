@@ -10,10 +10,6 @@ if (IFrames > 0){
 	IFrames--;
 }
 
-if (HP_Player <= 1){
-	HP_Player = 5;
-}
-
 if (HP_Player <= 0){
 	HP_Player = 5;
 	IFrames = 50;

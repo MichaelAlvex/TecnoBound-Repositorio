@@ -1,4 +1,4 @@
-draw_set_font(-1);
+draw_set_font(Font1);
 var _Centro_Slot = Tamanho_Slot / 2;
 var _Mouse_X = device_mouse_x_to_gui(0);
 var _Mouse_Y = device_mouse_y_to_gui(0);

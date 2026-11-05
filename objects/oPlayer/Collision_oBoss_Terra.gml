@@ -9,3 +9,5 @@ VelH = lengthdir_x(10, _Direcao);
 VelV = lengthdir_y(10, _Direcao);
 
 }
+
+audio_play_sound(snd_Dano_Player, 2, 0);

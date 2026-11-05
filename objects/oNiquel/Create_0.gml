@@ -1,8 +1,8 @@
 event_inherited();
-nome = "Niquel";
+nome = "Níquel";
 sprite = sNiquel;
 quantidade = 25;
-descricao = "Metal com alta condutividade elétrica e termica,\nusado para fios, condutores e dissípadores";
+descricao = "Metal resistente à ferrugem,\nusado em baterias e na proteção\ndos conectores do computador";
 sprite_index = sprite
 
 
