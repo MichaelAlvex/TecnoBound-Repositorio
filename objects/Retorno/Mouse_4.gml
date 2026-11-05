@@ -1,52 +1,51 @@
-
 if (global.faseAtual == 1) {
 
-    // Voltar para o periférico da primeira fase
     switch (global.perifericoEscolhido) {
-        case 0:
+        case "Mouse":
             room_goto(rMontagemMouse);
             break;
-
-        case 1:
+        case "Teclado":
             room_goto(rMontagemTeclado);
             break;
-
-        case 2:
+        case "Monitor":
             room_goto(rMontagemMonitor);
+            break;
+        default:
+            show_debug_message("Periferico desconhecido: " + string(global.perifericoEscolhido));
             break;
     }
 
 } else if (global.faseAtual == 2) {
 
-    // Voltar para o componente da segunda fase
     switch (global.componenteEscolhido) {
-        case 0:
+        case "PlacaMae":
             room_goto(MontagemPMae);
             break;
-
-        case 1:
+        case "PlacaVideo":
             room_goto(MontagemPVideo);
             break;
-
-        case 2:
+        case "Processador":
             room_goto(MontagemProcessador);
+            break;
+        default:
+            show_debug_message("Componente desconhecido: " + string(global.componenteEscolhido));
             break;
     }
 
 } else if (global.faseAtual == 3) {
 
-    // Voltar para o computador da terceira fase
     switch (global.computadorEscolhido) {
-        case 0:
+        case "PCGamer":
             room_goto(MontagemGamer);
             break;
-
-        case 1:
+        case "PCDomestico":
             room_goto(MontagemCasa);
             break;
-
-        case 2:
+        case "PCEscritorio":
             room_goto(MontagemEscritorio);
+            break;
+        default:
+            show_debug_message("Computador desconhecido: " + string(global.computadorEscolhido));
             break;
     }
 }
