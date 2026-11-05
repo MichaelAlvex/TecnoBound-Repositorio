@@ -18,7 +18,7 @@ if (HP_Player <= 0){
 	Estado = "Livre";
 	VelH = 0;
 	VelV = 0;
-	room_goto(Room_0);
+	room_goto(Room_Morte);
 }
 
 if (Lentidao) {

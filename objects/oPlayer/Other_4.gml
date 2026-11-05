@@ -11,21 +11,7 @@ if (
 } else {
     visible = true;
 }
-if (room != Menu 
-&& room != Conclusao 
-&& room != Envio 
-&& room != Pedidos 
-&& room != rMontagemMonitor 
-&& room != rMontagemMouse 
-&& room != rMontagemTeclado 
-&& room != rOficina
-&& room != MontagemPMae
-&& room != MontagemPVideo
-&& room != MontagemProcessador
-&& room != MontagemCasa
-&& room != MontagemEscritorio
-&& room != MontagemGamer
-){
+if (!instance_exists(oSalas_Sem_Player)){
 
 	x = room_width / 2;
 	y = room_height / 2;
