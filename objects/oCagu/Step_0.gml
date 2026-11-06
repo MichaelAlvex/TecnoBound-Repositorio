@@ -27,3 +27,7 @@ if (direction >= 45 && direction < 135)       sprite_index = spr_up;
 else if (direction >= 135 && direction < 225) sprite_index = spr_left;
 else if (direction >= 225 && direction < 315) sprite_index = spr_down;
 else                                          sprite_index = spr_right;
+
+if (Monstro_Tremer_Timer > 0) {
+    Monstro_Tremer_Timer--;
+}

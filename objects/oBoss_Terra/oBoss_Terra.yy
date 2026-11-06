@@ -16,8 +16,8 @@
     "path":"folders/Objetos/Bosses/Boss_Terra.yy",
   },
   "parentObjectId":{
-    "name":"oMonstro_Mae",
-    "path":"objects/oMonstro_Mae/oMonstro_Mae.yy",
+    "name":"oMonstro_Mae_Bosses",
+    "path":"objects/oMonstro_Mae_Bosses/oMonstro_Mae_Bosses.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

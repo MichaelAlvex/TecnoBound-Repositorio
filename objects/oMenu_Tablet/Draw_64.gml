@@ -35,8 +35,13 @@ if (Tablet_Aberto == true) {
         draw_sprite(sBtn_Home, 0, Pos_Fundo_X + 257, Pos_Y_Apps1);
 
         if (Tela_Atual == "oficina") {
-
+			
+			var _bm_x = Pos_Fundo_X + 78;
+            var _bm_y = Pos_Fundo_Y + 55;
             draw_sprite(sTp_Oficina, 0, Pos_Fundo_X + 115, Pos_Y_Apps1 + 45);
+			draw_set_halign(fa_center);
+			draw_text_transformed(_bm_x + (sprite_get_width(sBtn_MenuPrincipal) / 2) + 35, _bm_y + (sprite_get_height(sBtn_MenuPrincipal) / 2 + 35), "Teleportar para a oficina (Apenas com os minerios do pedido!)", 0.35, 0.35, 0);
+			draw_set_halign(fa_left);
         }
 
         else if (Tela_Atual == "pedidos") {
@@ -436,13 +441,13 @@ if (Tablet_Aberto == true) {
             var _bm_y = Pos_Fundo_Y + 55;
 
             draw_sprite(sBtn_MenuPrincipal, 0, _bm_x, _bm_y);
-            draw_text_transformed(_bm_x + (sprite_get_width(sBtn_MenuPrincipal) / 2), _bm_y + (sprite_get_height(sBtn_MenuPrincipal) / 2), "Menu Principal", 0.35, 0.35, 0);
+            draw_text_transformed(_bm_x + (sprite_get_width(sBtn_MenuPrincipal) / 2), _bm_y + (sprite_get_height(sBtn_MenuPrincipal) / 2 + 35), "Menu Principal", 0.35, 0.35, 0);
 
             var _bs_x = Pos_Fundo_X + 148;
             var _bs_y = Pos_Fundo_Y + 55;
 
             draw_sprite(sBtn_FecharJogo, 0, _bs_x, _bs_y);
-            draw_text_transformed(_bs_x + (sprite_get_width(sBtn_FecharJogo) / 2), _bs_y + (sprite_get_height(sBtn_FecharJogo) / 2), "Salvar e Fechar Jogo", 0.35, 0.35, 0);
+            draw_text_transformed(_bs_x + (sprite_get_width(sBtn_FecharJogo) / 2), _bs_y + (sprite_get_height(sBtn_FecharJogo) / 2 + 35), "Salvar e Fechar Jogo", 0.35, 0.35, 0);
 
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);

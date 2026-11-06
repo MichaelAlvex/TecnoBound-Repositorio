@@ -11,3 +11,7 @@ spr_right = sCagu_Direita;
 
 sprite_index = spr_down;
 image_speed = 1;
+
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

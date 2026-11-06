@@ -1,0 +1,1 @@
+oPlayer.energia = min(oPlayer.energia + 5, oPlayer.max_celulas);

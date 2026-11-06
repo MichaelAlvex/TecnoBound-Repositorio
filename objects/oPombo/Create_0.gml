@@ -17,3 +17,7 @@ spr_left  = sPombo_Esquerda;
 spr_right = sPombo_Direita;
 
 sprite_index = spr_down;
+
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

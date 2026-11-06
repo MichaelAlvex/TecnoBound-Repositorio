@@ -18,6 +18,7 @@ if (HP_Player <= 0){
 	Estado = "Livre";
 	VelH = 0;
 	VelV = 0;
+	oMenu_Tablet.Tablet_Aberto = false;
 	room_goto(Room_Morte);
 }
 
@@ -195,8 +196,9 @@ switch (Estado){
 
 	case "Livre":
     if (oInventario.Slot_Selecionado == 0 && mouse_check_button(mb_left)){
-
-        var _Monstro = instance_position(mouse_x, mouse_y, oMonstro_Mae);
+		
+		var _Folga = 15; 
+		var _Monstro = collision_circle(mouse_x, mouse_y, _Folga, oMonstro_Mae, false, true);
 
         if (_Monstro != noone){
             var _Px = x;
@@ -218,6 +220,33 @@ switch (Estado){
                         }
                     }
                     with (_Monstro) instance_destroy();
+                }
+            }
+        }
+		
+		var _Folga_Bosses = 30; 
+		var _Boss = collision_circle(mouse_x, mouse_y, _Folga, oMonstro_Mae_Bosses, false, true);
+
+        if (_Boss != noone){
+            var _Px = x;
+            var _Py = y + 27;
+
+            var _Mx = (_Boss.bbox_left + _Boss.bbox_right) / 2;
+            var _My = (_Boss.bbox_top + _Boss.bbox_bottom) / 2;
+
+            if (point_distance(_Px, _Py, _Mx, _My) <= 44 && Cooldown_Ataque <= 0){
+                _Boss.HP_Monstro -= 50;
+                _Boss.Monstro_Tremer_Timer = 10;
+                Cooldown_Ataque = 12;
+
+                if (_Boss.HP_Monstro <= 0){
+                    if (variable_global_exists("monstros_derrotados")) {
+                        var _tipo = _Boss.tipo_monstro;
+                        if (struct_exists(global.monstros_derrotados, _tipo)) {
+                            global.monstros_derrotados[$ _tipo] += 1;
+                        }
+                    }
+                    with (_Boss) instance_destroy();
                 }
             }
         }

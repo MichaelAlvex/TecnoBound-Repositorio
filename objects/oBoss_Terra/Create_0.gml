@@ -140,10 +140,4 @@ function estado_dano() {
 
 ataques = [estado_aviso_galhos];
 
-mask_index = sBossTerra_Idle;
-
-parede = instance_create_layer(x, y, "Instances", oParede_Invisivel);
-parede.mask_index = sBossTerra_Idle;
-parede.visible = false;
-
 mudar_estado(estado_idle);

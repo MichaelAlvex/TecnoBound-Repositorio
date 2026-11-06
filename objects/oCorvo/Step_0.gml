@@ -74,3 +74,6 @@ else if (_olhar >= 135 && _olhar < 225) sprite_index = spr_left;
 else if (_olhar >= 225 && _olhar < 315) sprite_index = spr_down;
 else                                    sprite_index = spr_right;
 
+if (Monstro_Tremer_Timer > 0) {
+    Monstro_Tremer_Timer--;
+}

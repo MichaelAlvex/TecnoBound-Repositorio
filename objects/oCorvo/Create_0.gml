@@ -43,3 +43,7 @@ mover = function(_ang, _v) {
     y += _dy;
     return _bateu;
 }
+
+tremer_timer = 0;     
+tremer_potencia = 3;
+Monstro_Tremer_Timer = 0;

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Menus",
-    "path":"folders/Sprites/Menus.yy",
+    "name":"Conquistas",
+    "path":"folders/Sprites/Menus/Tablet/Conquistas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

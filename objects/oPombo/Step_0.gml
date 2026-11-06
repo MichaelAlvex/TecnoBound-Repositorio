@@ -46,3 +46,7 @@ else if (estado == "atirar") {
         cooldown = cooldown_max;
     }
 }
+
+if (Monstro_Tremer_Timer > 0) {
+    Monstro_Tremer_Timer--;
+}
