@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTentarDeNovo",
-    "path":"sprites/sTentarDeNovo/sTentarDeNovo.yy",
+    "name":"Sprite319",
+    "path":"sprites/Sprite319/Sprite319.yy",
   },
   "spriteMaskId":null,
   "visible":true,

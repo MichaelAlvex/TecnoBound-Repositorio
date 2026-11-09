@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sDesistir",
-    "path":"sprites/sDesistir/sDesistir.yy",
+    "name":"Sprite320",
+    "path":"sprites/Sprite320/Sprite320.yy",
   },
   "spriteMaskId":null,
   "visible":true,
