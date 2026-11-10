@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"sBotao_E",
   "bboxMode":0,
-  "bbox_bottom":22,
+  "bbox_bottom":20,
   "bbox_left":1,
   "bbox_right":22,
   "bbox_top":1,
