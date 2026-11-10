@@ -154,14 +154,19 @@ Ajuda_Paginas = [
         sprite: asset_get_index("sAjuda_5")
     },
 	{
-        titulo: "Concluindo o pedido",
+        titulo: "Teleportando para a oficina",
         texto:  "Quando todos os minerios necessários forem coletados, use o menu de oficina para se ir direto para a estação de fabricação de peças, lá você fornecerá os minérios necessários e juntará pedaços de hardware para concluir o pedido.",
         sprite: asset_get_index("sAjuda_6")
     },
 	{
+        titulo: "Montagem de peças",
+        texto:  "Um pedido não se monta sozinho, os pedaços do hardware precisam ser colocados no centro superior da mesa, e sobrepostos um pelo outro da direita pra esquerda.",
+        sprite: asset_get_index("sAjuda_7")
+    },
+	{
         titulo: "Novos pedidos",
         texto:  "Entregar um pedido não é o fim, você pode usar o dinheiro obtido dos pedidos para desbloquear mais peças e realizar pedidos ainda mais elaborados.",
-        sprite: asset_get_index("sAjuda_7")
+        sprite: asset_get_index("sAjuda_8")
     }
 ];
 

@@ -8,8 +8,8 @@
   "name":"oStats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos_Abstratos",
-    "path":"folders/Objetos/Objetos_Abstratos.yy",
+    "name":"Menu_Tablet",
+    "path":"folders/Objetos/Menu_Tablet.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -42,3 +42,5 @@ if (Direcao_Player >= 30 && Direcao_Player <= 120){
 if (Monstro_Tremer_Timer > 0) {
     Monstro_Tremer_Timer--;
 }
+
+depth = oPlayer.depth + 1;

@@ -6,8 +6,8 @@
   "name":"oParede_Invisivel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos_Abstratos",
-    "path":"folders/Objetos/Objetos_Abstratos.yy",
+    "name":"Geracao_Cavernas",
+    "path":"folders/Objetos/Objetos_Abstratos/Geracao_Cavernas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
