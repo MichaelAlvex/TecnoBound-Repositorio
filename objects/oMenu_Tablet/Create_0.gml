@@ -118,10 +118,10 @@ global.conquistas = [
     },
     {
         nome: "Entregador Experiente",
-        descricao: "Conclua 10 pedidos.",
+        descricao: "Conclua 2 pedidos.",
         sprite: sConq_EntregadorExperiente,
         desbloqueada: false,
-        condicao: function() { return global.stat_pedidos >= 10; }
+        condicao: function() { return global.stat_pedidos >= 2; }
     }
 ];
 
@@ -148,25 +148,30 @@ Ajuda_Paginas = [
         texto:  "Você não está sozinha nas cavernas!\nMonstros espreitam por aí e vão fazer de tudo para te derrotar.\nUse a sua broca para dar dano e elimina-los antes que eliminem você.",
         sprite: asset_get_index("sAjuda_4")
     },
+	{
+        titulo: "Se curando",
+        texto:  "O dano que os monstros causam não é permanente.\nToda vez que você derrota um monstro ou coleta 5 minerais, um raio será adicionado à sua barra de energia\nPressione a tecla Q para converter a energia ganhada em vida.",
+        sprite: asset_get_index("sAjuda_5")
+    },
     {
         titulo: "Bosses",
         texto:  "Nem todo minério pode ser coletado de pedras, alguns são guardados pessoalmente por monstros terríveis que ficam no nível mais baixo de seus biomas.\nDerrotar um boss pode ser difícil, mas vai te garantir um minério exclusivo e acesso a um novo bioma.",
-        sprite: asset_get_index("sAjuda_5")
+        sprite: asset_get_index("sAjuda_6")
     },
 	{
         titulo: "Teleportando para a oficina",
         texto:  "Quando todos os minerios necessários forem coletados, use o menu de oficina para se ir direto para a estação de fabricação de peças, lá você fornecerá os minérios necessários e juntará pedaços de hardware para concluir o pedido.",
-        sprite: asset_get_index("sAjuda_6")
+        sprite: asset_get_index("sAjuda_7")
     },
 	{
         titulo: "Montagem de peças",
         texto:  "Um pedido não se monta sozinho, os pedaços do hardware precisam ser colocados no centro superior da mesa, e sobrepostos um pelo outro da direita pra esquerda.",
-        sprite: asset_get_index("sAjuda_7")
+        sprite: asset_get_index("sAjuda_8")
     },
 	{
         titulo: "Novos pedidos",
         texto:  "Entregar um pedido não é o fim, você pode usar o dinheiro obtido dos pedidos para desbloquear mais peças e realizar pedidos ainda mais elaborados.",
-        sprite: asset_get_index("sAjuda_8")
+        sprite: asset_get_index("sAjuda_9")
     }
 ];
 

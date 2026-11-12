@@ -16,8 +16,8 @@ draw_set_valign(fa_top);
 draw_text_ext(_bx + 14, _by + 14, string_copy(falas[indice], 1, floor(chars)), 18, _cw - 28);
 
 if (chars >= string_length(falas[indice])) {
-    var _ox = _bx + _cw - sprite_get_width(sBotao_E) - 8;
-    var _oy = _by + _ch - sprite_get_height(sBotao_E) - 6;
+    var _ox = _bx + _cw - sprite_get_width(sBotao_E) - 12;
+    var _oy = _by + _ch - sprite_get_height(sBotao_E) - 10;
     draw_sprite(sBotao_E, 0, _ox, _oy + sin(current_time / 200) * 2);
 }
 

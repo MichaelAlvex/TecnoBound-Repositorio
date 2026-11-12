@@ -167,7 +167,7 @@ if (Tablet_Aberto == true) {
             draw_text_transformed(0, _y_pos, "[ Monstros Derrotados ]", 1, 1, 0);
             _y_pos += _esp_titulo;
 
-            var _monstros = ["Slime", "Morcego", "Aranha", "Boss de gelo", "Boss de terra", "Boss de lava"];
+            var _monstros = ["Slime", "Morcego", "Aranha", "Neodemonium", "Nickentree", "Pyrovskite"];
             for (var i = 0; i < array_length(_monstros); i++) {
                 var _mon_nome = _monstros[i];
                 var _mon_qtd = 0;
